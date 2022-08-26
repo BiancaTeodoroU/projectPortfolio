@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+header {
+    position: fixed;
+    background: #ffc4d8;
+    padding: 1.25rem;
+    width: 100%;
+    height: 1.875rem;
+}
+
+.left h3 {
+    color: black;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.left span {
+    color: #a15f9e;
+}
+
+.sidebar {
+    position: fixed;
+    width: 15.625rem;
+    height: 100%;
+    margin-top: 4.375rem;
+    padding-top: 1.875rem;
+    left: 0;
+    background: #ffcbdb;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+.sidebar .image {
+    width: 8rem;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.sidebar h2 {
+    color: black;
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+}
+
+.sidebar a {
+    color: black;
+    display: block;
+    width: 100%;
+    line-height: 3.75rem;
+    text-decoration: none;
+    padding-left: 2.5rem;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.sidebar a:hover {
+    background: #dc96d8;
+}
+
+.sidebar ion-icon {
+    padding-right: 0.625rem;
+}
+
+label #sidebar_btn {
+    z-index: 1;
+    position: fixed;
+    left: 18.75rem;
+    color: black;
+    font-size: 1.563rem;
+    margin: 0.313rem 0;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover {
+    color: #ba55d3;
+}
+
+#check:checked ~ .sidebar {
+    left: -11.875rem;
+}
+
+#check:checked ~ .sidebar a span {
+    display: none;
+}
+
+#check:checked ~ .sidebar a {
+    font-size: 1.25rem;
+    margin-left: 10.625rem;
+    width: 5rem;
+}
+
+#check {
+    display: none;
+}
