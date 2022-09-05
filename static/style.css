@@ -6,16 +6,33 @@
     font-family: 'Red Hat Display', sans-serif;
 }
 
-header {
+body {
+    background: #0C0D14;
+}
+
+nav {
     position: fixed;
-    background: #ffc4d8;
+    background: #1A1B28;
     padding: 1.25rem;
     width: 100%;
-    height: 1.875rem;
+    height: 1.5rem;
+
+    z-index: 99;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.left {
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    margin: 0 80px;
 }
 
 .left h3 {
-    color: black;
+    color: white;
     margin: 0;
     text-transform: uppercase;
     font-size: 1.3rem;
@@ -23,19 +40,22 @@ header {
 }
 
 .left span {
-    color: #a15f9e;
+    color: #ff266a;
 }
 
 .sidebar {
     position: fixed;
     width: 15.625rem;
     height: 100%;
-    margin-top: 4.375rem;
-    padding-top: 1.875rem;
+    margin-top: 4rem;
+    padding-top: 1rem;
     left: 0;
-    background: #ffcbdb;
+    background: #0C0D14;
+    border-right: 1px solid #28293D;
     transition: 0.5s;
     transition-property: left;
+
+    z-index: 99;
 }
 
 .sidebar .image {
@@ -45,21 +65,22 @@ header {
 }
 
 .sidebar h2 {
-    color: black;
+    color: #ff266a;
     margin-top: 0;
-    margin-bottom: 1.25rem;
+    margin-bottom: 10px;
 }
 
 .sidebar a {
-    color: black;
+    color: #6842FF;
     display: block;
     width: 100%;
-    line-height: 3.75rem;
+    line-height: 3.2rem;
     text-decoration: none;
-    padding-left: 2.5rem;
+    padding-left: 2.2rem;
     box-sizing: border-box;
     transition: 0.5s;
     transition-property: background;
+    font-weight: 500;
 }
 
 .sidebar a:hover {
@@ -68,15 +89,20 @@ header {
 
 .sidebar ion-icon {
     padding-right: 0.625rem;
+    color: #6842FF;
+    font-size: 1.3rem; 
+    width: 2rem;
+    overflow: hidden;
+    vertical-align: sub;
 }
+
 
 label #sidebar_btn {
     z-index: 1;
     position: fixed;
-    left: 18.75rem;
-    color: black;
+    left: 2rem;
+    color: #6842FF;
     font-size: 1.563rem;
-    margin: 0.313rem 0;
     cursor: pointer;
     transition: 0.5s;
     transition-property: color;
@@ -102,4 +128,120 @@ label #sidebar_btn:hover {
 
 #check {
     display: none;
+}
+
+h1 {
+    font-size: 34px;
+    color: #ff266a;
+}
+
+.title-purple {
+    font-weight: 800;
+}
+
+h1, h2 {
+    margin: 0;
+    font-weight: 500;
+}
+
+p {
+    margin-top: 10px;
+    font-weight: 400;
+    color: white;
+}
+
+.card {
+    border: none;
+    padding: 1px;
+    margin: 0 20px;
+    height: 19.5rem;
+    background: #8a4a88;
+}
+
+.about-me {
+    display: flex;
+    padding: 160px 110px 162px 120px;
+}
+
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about__cards {
+    grid-gap: 2rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 15px;
+}
+
+.about__card {
+    background: #ff1d6588;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    cursor: default;
+    padding: 0.625rem 0;
+    font-size: 14px;
+    text-align: center;
+    transition: all 400ms ease;
+}
+
+.about__card ion-icon {
+    color: #d8bfd8;
+    width: 20px;
+    height: 20px;
+}
+
+.about__card h5 {
+    color: #d8bfd8;
+    margin: 5px 30px;
+}
+
+.service {
+    text-align: center;
+    padding: 20px 480px;
+    background: #fff0fd;
+}
+
+.service h1 {
+    padding: 30px 10px 20px;
+    font-weight: 800;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto 0;
+    max-width: 1200px;
+}
+
+.service h2 {
+    color: #ff6f9c;
+    font-weight: 800;
+}
+
+.service .services-container .service-card {
+    max-width: 360px;
+    background: #f0ddee;
+    border: 1px solid #d8bfd8;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgb(185, 177, 177);
+    padding: 40px 25px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.service .services-container .service-card ion-icon {
+    margin-bottom: 40px;
+    height: 50px;
+    width: 90px;
+}
+
+.service-card {
+    margin-bottom: 30px;
 }

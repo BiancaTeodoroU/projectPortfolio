@@ -11,14 +11,14 @@
 <body>
     <input type="checkbox" id="check">
     <!--Header começo-->
-    <header>
-        <label for="check">
+    <nav>
+        <label for="check" class="color-svg">
             <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon>
         </label>
         <div class="left">
             <h3>Front <span>Bia</span></h3>
         </div>
-    </header>
+    </nav>
     <!--header final-->
     <!--sidebar começo-->
     <div class="sidebar">
@@ -28,10 +28,57 @@
         </center>
         <a href="#"><ion-icon name="person-outline"></ion-icon><span>Sobre mim</span></a>
         <a href="#"><ion-icon name="briefcase-outline"></ion-icon><span>Serviços</span></a>
-        <a href="#"><ion-icon name="desktop-outline"></ion-icon><span>Projetos</span></a>
+        <a href="#"><ion-icon name="code-outline"></ion-icon><span>Projetos</span></a>
         <a href="#"><ion-icon name="bulb-outline"></ion-icon><span>Conhecimentos</span></a>
+        <a href="#"><ion-icon name="call-outline"></ion-icon><span>Contato</span></a>
     </div>
     <!--sidebar final-->
+    <!--Sobre mim-->
+    <section id="aboutme" class="about-me">
+        <div class="card"></div>
+        <div class="container">
+            <h1 class="title-purple">Sobre mim</h1>
+            <p>
+                Prudentina de 19 anos, estou estudando para ser desenvolvedora
+                front-end. Estou fazendo a faculdade de análise e desenvolvimento de
+                sistemas da Instituição Universitária de Toledo Prudente. E desde
+                fevereiro de 2022 estou estudando focada na parte frontend usando:
+                html, css, js e pug. <br /><br />
+                Adoro estudar sobre novas tecnologias e estou sempre pronta para um
+                novo desafio.
+            </p>
+            <div class="about__cards">
+                <article class="about__card">
+                    <ion-icon name="school-outline"></ion-icon>
+                    <h5>Vontade de aprender</h5>
+                </article>
+                <article class="about__card">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <h5>Gosto muito de trabalhar em equipe</h5>
+                </article>
+                <article class="about__card">
+                    <ion-icon name="rocket-outline"></ion-icon>
+                    <h5>Proatividade para assumir responsabilidades</h5>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="Serviços" class="service">
+        <div class="fundo-color">
+            <h1>Serviços</h1>
+            <div class="services-container">
+                <div class="service-card">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                    <h2>Desenvolvimento de sites</h2>
+                    <p>
+                        Desenvolvimento de sites empresariais. Faça sua empresa ser
+                        facilmente encontrada online.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>Olaaaa</section>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
