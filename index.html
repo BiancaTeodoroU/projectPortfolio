@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/iconFlor.png">
-    <link rel="stylesheet" href="./static/style.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet/less" type="text/css" href="./static/styles.less" />
     <title>Portfolio Bianca</title>
 </head>
 <body>
@@ -35,11 +37,11 @@
     <!--sidebar final-->
     <!--Sobre mim-->
     <section id="aboutme" class="about-me">
-        <div class="card"></div>
         <div class="container">
             <h1 class="title-purple">Sobre mim</h1>
-            <h2>Hello, <br>I am Bianca Teodoro</h2>
-            <p>
+        <div class="card"></div>
+            <h2 class="u-m-20">Hello, <br>I am Bianca Teodoro</h2>
+            <p class="u-m-20">
                 Prudentina de 19 anos, estou estudando para ser desenvolvedora
                 front-end. Estou fazendo a faculdade de análise e desenvolvimento de
                 sistemas da Instituição Universitária de Toledo Prudente. E desde
@@ -62,6 +64,23 @@
                     <h5>Proatividade para assumir responsabilidades</h5>
                 </article>
             </div>
+        </div>
+    </section>
+    <section id="minhaHistoria" class="minhaHistoria">
+        <div class="container-minhaHistoria">
+            <h1 class="title-MinhaHistoria">Curiosidades sobre mim</h1>
+            <p>
+                Minha história com programação começou logo após eu ter concluido o ensino médio, 
+                Logo depois consegui meu primeiro emprego aos 18 anos como auxiliar de escritório em geral
+                e tive a oportunidade de conhecer de perto os estágiarios de TI da empresa, e assim que eu me apaixonei e decidi ingressar na área,
+                começando a faculdade de análise e desenvolvimento de sistemas em agosto daquele mesmo ano.<br>
+                <br>Executei minha primeira aplicação Front-end na materia de desenvolvimento web front-end da faculdade e 
+                descobri que era aquilo que eu queria seguir de especialidade, e desde fevereiro de 2022 venho estudando para ser Desenvovedora Front-end</p>
+                <br><p>Meus passatempos favoritos são sair pra comer kk, jogar no computador, e ficar com meus pets.
+            </p>
+        </div>
+        <div class="img-container">
+            <img src="./images/teste2.jpeg" alt="Bianca Teodoro" />
         </div>
     </section>
     <!--Sobre mim Final-->
@@ -90,65 +109,219 @@
         </div>
     </section>
     <!--Serviços Final-->
-    <section id="portfolio" class="portfolio">
-        <h1>Projetos</h1>
-        <div class="portfolio-container">
-            <div class="portfolio-card">
-                <div class="img-container">
-                <div class="line green"></div>
-                <img src="/images/prova devweb.png" alt="Imagem do portfolio" />
-                </div>
-                <div class="language-container">
-                <ul>
-                    <li>html</li>
-                    <li>css</li>
-                    <li>js</li>
-                </ul>
-                </div>
-                <p><b>Prova dev web front-end</b></p>
-                <p>
-                Projeto feito usando html, css e js com o objetivo de apresentar
-                para a prova de desenvolvimento web front-end uma interface
-                diferente, e maneiras de melhora no agronegócio.
-                </p>
+    <section id="projetos">
+        <h1 class="title">Projetos</h1>
+        <div class="container-card">
+            <div class="arrow arrow-left">
+                <button type="button" aria-label="próximo ao anterior" id="previous"><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_103_2)">
+                    <path d="M29.8419 37.0647L18.0006 24.908L30.1572 13.0667" stroke="white" stroke-width="4"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_103_2">
+                    <rect width="48" height="48" fill="white" transform="translate(48.6826 49.3133) rotate(-179.247)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </button>
             </div>
-            <div class="portfolio-card">
-                <div class="img-container">
-                <div class="line green"></div>
-                <img src="/images/layout.png" alt="Imagem do portfolio" />
-                </div>
-                <div class="language-container">
-                <ul>
-                    <li>html</li>
-                    <li>css</li>
-                </ul>
-                </div>
-                <p><b>Treino layout</b></p>
-                <p>
-                Projeto feito usando html, e css com o objetivo de treino para
-                aprender mais sobre as estilizações que são possiveis atráves do
-                css.
-                </p>
+            <div class="arrow arrow-right">
+                <button type="button" aria-label="o próximo" id="next"><svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_103_2)">
+                    <path d="M20.1581 12.9353L31.9994 25.092L19.8427 36.9333" stroke="white" stroke-width="4"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_103_2">
+                    <rect width="48" height="48" fill="white" transform="translate(1.31738 0.686707) rotate(0.752884)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>                    
+                </button>
             </div>
-            <div class="portfolio-card">
-                <div class="img-container">
-                <div class="line green"></div>
-                <img src="./images/LayoutGym.jpeg" alt="Imagem do portfolio" class="c-ajust__imageGym" />
+
+            <div class="content-projetos">
+                <div id="slider" class="projetos">
+                    <div class="card-projetos">
+                        <div class="cardContent-projetos">
+                            <div class="imageCard-projetos">
+                                <img src="./images/LayoutGym.jpeg" alt="">
+                            </div>
+                            <div class="nome-projeto">
+                                <span class="nome">Tela de login em pug</span>
+                                <span class="desenvolvimento">Tela de login feita em pug, design feito por mim no figma e executado em pug no intuito de aprender mais sobre pug e explorar oque pode ser feito utilizando o framework.</span>
+                                <span class="Desc-nivelDificuldade">Nivel de dificuldade</span>
+                            </div>
+                            <div class="nivel-dificuldade">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524v-12.005zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z"/></svg>
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.668 8.626l8.332 1.159-6.065 5.874 1.48 8.341-7.416-3.997-7.416 3.997 1.481-8.341-6.064-5.874 8.331-1.159 3.668-7.626 3.669 7.626zm-6.67.925l-6.818.948 4.963 4.807-1.212 6.825 6.068-3.271 6.069 3.271-1.212-6.826 4.964-4.806-6.819-.948-3.002-6.241-3.001 6.241z"/></svg>
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.668 8.626l8.332 1.159-6.065 5.874 1.48 8.341-7.416-3.997-7.416 3.997 1.481-8.341-6.064-5.874 8.331-1.159 3.668-7.626 3.669 7.626zm-6.67.925l-6.818.948 4.963 4.807-1.212 6.825 6.068-3.271 6.069 3.271-1.212-6.826 4.964-4.806-6.819-.948-3.002-6.241-3.001 6.241z"/></svg>
+                            </div>
+                            <div class="button">
+                                <button class="github">Github</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-projetos">
+                        <div class="cardContent-projetos">
+                            <div class="imageCard-projetos">
+                                <img src="./images/projectBuf.jpeg" alt="">
+                            </div>
+                            <div class="nome-projeto">
+                                <span class="nome">Prova de sistema de vendas em flask</span>
+                                <span class="desenvolvimento">Prova com o objetivo de ser feito um sistema de vendas utilizando o framework flask.</span>
+                                <span class="Desc-nivelDificuldade-5">Nivel de dificuldade</span>
+                            </div>
+                            <div class="nivel-dificuldade-5">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524v-12.005zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z"/></svg>
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.668 8.626l8.332 1.159-6.065 5.874 1.48 8.341-7.416-3.997-7.416 3.997 1.481-8.341-6.064-5.874 8.331-1.159 3.668-7.626 3.669 7.626zm-6.67.925l-6.818.948 4.963 4.807-1.212 6.825 6.068-3.271 6.069 3.271-1.212-6.826 4.964-4.806-6.819-.948-3.002-6.241-3.001 6.241z"/></svg>
+                            </div>
+                            <div class="button">
+                                <button class="github-4">Github</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-projetos">
+                        <div class="cardContent-projetos">
+                            <div class="imageCard-projetos">
+                                <img src="./images/formlárioLol.jpeg" alt="">
+                            </div>
+                            <div class="nome-projeto">
+                                <span class="nome">Formulário com o tema de league of legends</span>
+                                <span class="desenvolvimento">Formulário feito com o tema de league of legends para poder ser feito testes em API.</span>
+                                <span class="Desc-nivelDificuldade-6">Nivel de dificuldade</span>
+                            </div>
+                            <div class="nivel-dificuldade-6">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524v-12.005zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z"/></svg>
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.668 8.626l8.332 1.159-6.065 5.874 1.48 8.341-7.416-3.997-7.416 3.997 1.481-8.341-6.064-5.874 8.331-1.159 3.668-7.626 3.669 7.626zm-6.67.925l-6.818.948 4.963 4.807-1.212 6.825 6.068-3.271 6.069 3.271-1.212-6.826 4.964-4.806-6.819-.948-3.002-6.241-3.001 6.241z"/></svg>
+                            </div>
+                            <div class="button">
+                                <button class="github-4">Github</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-projetos">
+                        <div class="cardContent-projetos">
+                            <div class="imageCard-projetos">
+                                <img src="./images/layoutInTreineer.jpeg" alt="">
+                            </div>
+                            <div class="nome-projeto">
+                                <span class="nome">Layout desafio</span>
+                                <span class="desenvolvimento">Desafio da plataforma frontendmentor.io para reprodução de uma lady page.</span>
+                                <span class="Desc-nivelDificuldade-4">Nivel de dificuldade</span>
+                            </div>
+                            <div class="nivel-dificuldade-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524v-12.005zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z"/></svg>
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.668 8.626l8.332 1.159-6.065 5.874 1.48 8.341-7.416-3.997-7.416 3.997 1.481-8.341-6.064-5.874 8.331-1.159 3.668-7.626 3.669 7.626zm-6.67.925l-6.818.948 4.963 4.807-1.212 6.825 6.068-3.271 6.069 3.271-1.212-6.826 4.964-4.806-6.819-.948-3.002-6.241-3.001 6.241z"/></svg>
+                            </div>
+                            <div class="button">
+                                <button class="github-4">Github</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-projetos">
+                        <div class="cardContent-projetos">
+                            <div class="imageCard-projetos">
+                                <img src="./images/provaDevWebFront.jpeg" alt="">
+                            </div>
+                            <div class="nome-projeto">
+                                <span class="nome">Prova Dev web Front-end</span>
+                                <span class="desenvolvimento">Prova de desenvolvimento web front-end que tinha como objetivo aprender mais sobre HTML, CSS, JavaScript e como utilizar o bootstrap.</span>
+                                <span class="Desc-nivelDificuldade-2">Nivel de dificuldade</span>
+                            </div>
+                            <div class="nivel-dificuldade-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                            </div>
+                            <div class="button">
+                                <button class="github-2">Github</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-projetos">
+                        <div class="cardContent-projetos">
+                            <div class="imageCard-projetos">
+                                <img src="./images/projectInLadyPage.jpeg" alt="">
+                            </div>
+                            <div class="nome-projeto">
+                                <span class="nome">Desafio de reprodução de layout</span>
+                                <span class="desenvolvimento">Desafio para reproduzir um layout da plataforma frontendmentor.io.</span>
+                                <span class="Desc-nivelDificuldade-3">Nivel de dificuldade</span>
+                            </div>
+                            <div class="nivel-dificuldade-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
+                                    <path d="m56,237 74-228 74,228L10,96h240"/>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 5.173l2.335 4.817 5.305.732-3.861 3.71.942 5.27-4.721-2.524v-12.005zm0-4.586l-3.668 7.568-8.332 1.151 6.064 5.828-1.48 8.279 7.416-3.967 7.416 3.966-1.48-8.279 6.064-5.827-8.332-1.15-3.668-7.569z"/></svg>
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.668 8.626l8.332 1.159-6.065 5.874 1.48 8.341-7.416-3.997-7.416 3.997 1.481-8.341-6.064-5.874 8.331-1.159 3.668-7.626 3.669 7.626zm-6.67.925l-6.818.948 4.963 4.807-1.212 6.825 6.068-3.271 6.069 3.271-1.212-6.826 4.964-4.806-6.819-.948-3.002-6.241-3.001 6.241z"/></svg>
+                                <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.668 8.626l8.332 1.159-6.065 5.874 1.48 8.341-7.416-3.997-7.416 3.997 1.481-8.341-6.064-5.874 8.331-1.159 3.668-7.626 3.669 7.626zm-6.67.925l-6.818.948 4.963 4.807-1.212 6.825 6.068-3.271 6.069 3.271-1.212-6.826 4.964-4.806-6.819-.948-3.002-6.241-3.001 6.241z"/></svg>
+                            </div>
+                            <div class="button">
+                                <button class="github-3">Github</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="language-container">
-                <ul>
-                    <li>pug</li>
-                    <li>js</li>
-                </ul>
-                </div>
-                <p><b>Sessão de Login</b></p>
-                <p>
-                Projeto feito usando pug, js com o objetivo de aprender mais sobre como são as funcionalidades do pug.
-                </p>
             </div>
         </div>
     </section>  
+    <section id="conhecimentos">
+        <h1 class="title">Conhecimentos</h1>
+    </section>
+    <script>
+        feather.replace()
+    </script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
-</html>m
+</html>
