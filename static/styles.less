@@ -189,25 +189,43 @@ p {
     margin-bottom: 20px;
 }
 
+.minhaHistoria::before {
+    max-width: 100%;
+}
+
 .minhaHistoria {
     display: flex;
-    padding: 50px 100px;
+    height: 580px;
+    padding: 48px 100px 0;
 }
 
 .minhaHistoria .container-minhaHistoria {
     width: 50%;
-    padding: 120px 20px;
+    padding: 70px 35px 0;
 }
 
 .minhaHistoria .img-container  {
-    width: 50%;
+    width: 60%;
     text-align: center;
     position: relative;
+    top: 40px;
 }
 
 .minhaHistoria .img-container img {
-    width: 80%;
+    width: 60%;
+    max-width: 100%;
+    min-width: 60%;
     height: 100%;
+    object-fit: cover;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.img-container:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
     object-fit: cover;
 }
 
@@ -256,7 +274,7 @@ p {
 .service {
     height: 520px;
     text-align: center;
-    padding: 20px 350px;
+    padding: 50px 350px;
 }
 
 .service h1 {
