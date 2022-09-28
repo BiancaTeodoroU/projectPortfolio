@@ -70,7 +70,20 @@ html {
 .sidebar .image {
     width: 130px;
     height: 130px;
+    max-width: 100%;
+    min-width: 50%;
+    object-fit: cover;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
     border-radius: 100%;
+}
+
+.sidebar .image:hover {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    object-fit: cover;
 }
 
 .sidebar h2 {
@@ -274,7 +287,8 @@ p {
 .service {
     height: 520px;
     text-align: center;
-    padding: 50px 350px;
+    padding: 80px 350px;
+    margin-bottom: 38px;
 }
 
 .service h1 {
@@ -293,11 +307,12 @@ p {
     justify-content: space-between;
     max-width: 1200px;
     margin: 60px auto 0;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .service h2 {
     font-weight: 700;
+    margin-bottom: 10px;
     color: #9d98ff;   
 }
 
