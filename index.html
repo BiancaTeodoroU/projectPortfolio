@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/iconFlor.png">
     <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet/less" type="text/css" href="./static/styles.less" />
     <title>Portfolio Bianca</title>
 </head>
@@ -17,15 +18,15 @@
         <label for="check" class="color-svg">
             <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon>
         </label>
-        <div class="left">
+        <div class="hamburguer-menu_left jt-cot_str">
             <h3>Front <span>Bia</span></h3>
         </div>
     </nav>
     <!--header final-->
     <!--sidebar começo-->
-    <div class="sidebar">
+    <div class="sidebar ovfl-hdd">
         <center>
-            <img src="./images/imageBIancaTeodoro.jpeg" class="image" alt="">
+            <img src="./images/BiancaTeodoroU.png" class="sidebar_image" alt="">
             <h2>Bianca</h2>
         </center>
         <a href="#"><ion-icon name="person-outline"></ion-icon><span>Sobre mim</span></a>
@@ -50,7 +51,7 @@
                 Adoro estudar sobre novas tecnologias e estou sempre pronta para um
                 novo desafio.
             </p>
-            <div class="about__cards">
+            <div class="about__cards jt-cot_str">
                 <article class="about__card">
                     <ion-icon name="school-outline"></ion-icon>
                     <h5>Vontade de aprender</h5>
@@ -66,7 +67,7 @@
             </div>
         </div>
     </section>
-    <section id="minhaHistoria" class="minhaHistoria">
+    <section id="minhaHistoria" class="minhaHistoria ps-rl">
         <div class="container-minhaHistoria">
             <h1 class="title-MinhaHistoria">Curiosidades</h1>
             <p>
@@ -79,7 +80,7 @@
                 <br><p>Meus passatempos favoritos são sair pra comer kk, jogar no computador, e ficar com meus pets.
             </p>
         </div>
-        <div class="img-container">
+        <div class="img-container ps-rl">
             <img src="./images/curiosidadesSobreMim.jpeg" alt="Bianca Teodoro" />
         </div>
     </section>
@@ -140,8 +141,8 @@
             </div>
 
             <div class="content-projetos">
-                <div id="slider" class="projetos">
-                    <div class="card-projetos">
+                <div id="slider" class="projetos ovfl-hdd">
+                    <div class="card-projetos ps-rl">
                         <div class="cardContent-projetos">
                             <div class="imageCard-projetos">
                                 <img src="./images/LayoutGym.jpeg" alt="">
@@ -163,11 +164,11 @@
                                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.668 8.626l8.332 1.159-6.065 5.874 1.48 8.341-7.416-3.997-7.416 3.997 1.481-8.341-6.064-5.874 8.331-1.159 3.668-7.626 3.669 7.626zm-6.67.925l-6.818.948 4.963 4.807-1.212 6.825 6.068-3.271 6.069 3.271-1.212-6.826 4.964-4.806-6.819-.948-3.002-6.241-3.001 6.241z"/></svg>
                             </div>
                             <div class="button">
-                                <button class="github">Github</button>
+                                <button class="github ps-rl">Github</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card-projetos">
+                    <div class="card-projetos ps-rl">
                         <div class="cardContent-projetos">
                             <div class="imageCard-projetos">
                                 <img src="./images/projectBuf.jpeg" alt="">
@@ -175,9 +176,9 @@
                             <div class="nome-projeto">
                                 <span class="nome">Prova de sistema de vendas em flask</span>
                                 <span class="desenvolvimento">Prova com o objetivo de ser feito um sistema de vendas utilizando o framework flask.</span>
-                                <span class="Desc-nivelDificuldade-5">Nivel de dificuldade</span>
+                                <span class="Desc-nivelDificuldade-2">Nivel de dificuldade</span>
                             </div>
-                            <div class="nivel-dificuldade-5">
+                            <div class="nivel-dificuldade">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                                     <path d="m56,237 74-228 74,228L10,96h240"/>
                                 </svg>
@@ -191,11 +192,11 @@
                                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.668 8.626l8.332 1.159-6.065 5.874 1.48 8.341-7.416-3.997-7.416 3.997 1.481-8.341-6.064-5.874 8.331-1.159 3.668-7.626 3.669 7.626zm-6.67.925l-6.818.948 4.963 4.807-1.212 6.825 6.068-3.271 6.069 3.271-1.212-6.826 4.964-4.806-6.819-.948-3.002-6.241-3.001 6.241z"/></svg>
                             </div>
                             <div class="button">
-                                <button class="github-4">Github</button>
+                                <button class="github ps-rl">Github</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card-projetos">
+                    <div class="card-projetos ps-rl">
                         <div class="cardContent-projetos">
                             <div class="imageCard-projetos">
                                 <img src="./images/formlárioLol.jpeg" alt="">
@@ -203,9 +204,9 @@
                             <div class="nome-projeto">
                                 <span class="nome">Formulário com o tema de league of legends</span>
                                 <span class="desenvolvimento">Formulário feito com o tema de league of legends para poder ser feito testes em API.</span>
-                                <span class="Desc-nivelDificuldade-6">Nivel de dificuldade</span>
+                                <span class="Desc-nivelDificuldade-2">Nivel de dificuldade</span>
                             </div>
-                            <div class="nivel-dificuldade-6">
+                            <div class="nivel-dificuldade">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                                     <path d="m56,237 74-228 74,228L10,96h240"/>
                                 </svg>
@@ -219,11 +220,11 @@
                                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.668 8.626l8.332 1.159-6.065 5.874 1.48 8.341-7.416-3.997-7.416 3.997 1.481-8.341-6.064-5.874 8.331-1.159 3.668-7.626 3.669 7.626zm-6.67.925l-6.818.948 4.963 4.807-1.212 6.825 6.068-3.271 6.069 3.271-1.212-6.826 4.964-4.806-6.819-.948-3.002-6.241-3.001 6.241z"/></svg>
                             </div>
                             <div class="button">
-                                <button class="github-4">Github</button>
+                                <button class="github ps-rl">Github</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card-projetos">
+                    <div class="card-projetos ps-rl">
                         <div class="cardContent-projetos">
                             <div class="imageCard-projetos">
                                 <img src="./images/layoutInTreineer.jpeg" alt="">
@@ -233,7 +234,7 @@
                                 <span class="desenvolvimento">Desafio da plataforma frontendmentor.io para reprodução de uma lady page.</span>
                                 <span class="Desc-nivelDificuldade-4">Nivel de dificuldade</span>
                             </div>
-                            <div class="nivel-dificuldade-4">
+                            <div class="nivel-dificuldade">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                                     <path d="m56,237 74-228 74,228L10,96h240"/>
                                 </svg>
@@ -247,11 +248,11 @@
                                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.668 8.626l8.332 1.159-6.065 5.874 1.48 8.341-7.416-3.997-7.416 3.997 1.481-8.341-6.064-5.874 8.331-1.159 3.668-7.626 3.669 7.626zm-6.67.925l-6.818.948 4.963 4.807-1.212 6.825 6.068-3.271 6.069 3.271-1.212-6.826 4.964-4.806-6.819-.948-3.002-6.241-3.001 6.241z"/></svg>
                             </div>
                             <div class="button">
-                                <button class="github-4">Github</button>
+                                <button class="github ps-rl">Github</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card-projetos">
+                    <div class="card-projetos ps-rl">
                         <div class="cardContent-projetos">
                             <div class="imageCard-projetos">
                                 <img src="./images/provaDevWebFront.jpeg" alt="">
@@ -259,9 +260,9 @@
                             <div class="nome-projeto">
                                 <span class="nome">Prova Dev web Front-end</span>
                                 <span class="desenvolvimento">Prova de desenvolvimento web front-end que tinha como objetivo aprender mais sobre HTML, CSS, JavaScript e como utilizar o bootstrap.</span>
-                                <span class="Desc-nivelDificuldade-2">Nivel de dificuldade</span>
+                                <span class="Desc-nivelDificuldade">Nivel de dificuldade</span>
                             </div>
-                            <div class="nivel-dificuldade-2">
+                            <div class="nivel-dificuldade">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                                     <path d="m56,237 74-228 74,228L10,96h240"/>
                                 </svg>
@@ -279,11 +280,11 @@
                                 </svg>
                             </div>
                             <div class="button">
-                                <button class="github-2">Github</button>
+                                <button class="github ps-rl">Github</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card-projetos">
+                    <div class="card-projetos ps-rl">
                         <div class="cardContent-projetos">
                             <div class="imageCard-projetos">
                                 <img src="./images/projectInLadyPage.jpeg" alt="">
@@ -293,7 +294,7 @@
                                 <span class="desenvolvimento">Desafio para reproduzir um layout da plataforma frontendmentor.io.</span>
                                 <span class="Desc-nivelDificuldade-3">Nivel de dificuldade</span>
                             </div>
-                            <div class="nivel-dificuldade-3">
+                            <div class="nivel-dificuldade">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                                     <path d="m56,237 74-228 74,228L10,96h240"/>
                                 </svg>
@@ -305,7 +306,7 @@
                                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.668 8.626l8.332 1.159-6.065 5.874 1.48 8.341-7.416-3.997-7.416 3.997 1.481-8.341-6.064-5.874 8.331-1.159 3.668-7.626 3.669 7.626zm-6.67.925l-6.818.948 4.963 4.807-1.212 6.825 6.068-3.271 6.069 3.271-1.212-6.826 4.964-4.806-6.819-.948-3.002-6.241-3.001 6.241z"/></svg>
                             </div>
                             <div class="button">
-                                <button class="github-3">Github</button>
+                                <button class="github ps-rl">Github</button>
                             </div>
                         </div>
                     </div>
@@ -316,7 +317,7 @@
     <section id="conhecimentos">
         <h1 class="title">Conhecimentos</h1>
         <div class="container-conhecimentos">
-            <div class="box">
+            <div class="box ps-rl ovfl-hdd">
                 <h2>Html</h2>
                 <?xml version="1.0" encoding="iso-8859-1"?>
                 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -346,7 +347,7 @@
                         como texto, hiperlinks e arquivos multimídia.</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="box ps-rl ovfl-hdd">
                 <h2>Css</h2>
                 <?xml version="1.0" encoding="iso-8859-1"?>
             <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -372,7 +373,7 @@
                 é necessário dizer que sua aplicação é utilizada na estilização de componentes escritos em linguagens de marcação.</p>
             </div>
             </div>
-            <div class="box">
+            <div class="box ps-rl ovfl-hdd">
                 <h2>Git</h2>
                 <?xml version="1.0" encoding="UTF-8"?>
                 <svg viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -389,7 +390,7 @@
                     <p>O Git é um projeto aberto, iniciado pelo criador do Linux, Linus Torvalds, disponível para Windows, Mac, e Linux. O ponto focal do Git é ser um sistema de controle e organização que armazena e revisa projetos.</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="box ps-rl ovfl-hdd">
                 <h2>Github</h2>
                 <svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                     <path d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z"/>
@@ -402,7 +403,7 @@
                         pois permite uma hospedagem prática de código-fonte e arquivos em nuvem.</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="box ps-rl ovfl-hdd">
                 <h2>JavaScript</h2>
                 <?xml version="1.0" encoding="iso-8859-1"?>
                 <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -424,7 +425,7 @@
                     <p>JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web — toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática — mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D animados, etc.</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="box ps-rl ovfl-hdd">
                 <h2>Pug</h2>
                 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 771.26 613.92"><title>1</title><path d="M939.79,734.44c-3.47-11.17-10.93-15.54-17.84-20.14-13.72-9.13-28.89-15.55-43.86-22.3-12-5.42-23.48-11.83-33.72-20.23-29.86-24.48-29.53-57.12,3.54-76.88,35.93-21.47,74.55-23.33,113.08-4.68,1,.51,2,1.24,2.43,3.48-8.18-1.19-16.34-2.67-24.56-3.54-19.44-2-38.79-1.93-57.46,4.89A68.43,68.43,0,0,0,867.33,602c-10.58,7-19.69,16.39-18.74,29.38,1,13.83,13.28,20.5,24,28.09,1.53-4.67-.9-7.46-1.69-10.5-4.7-18.23,1.92-31,20-36.7,18.34-5.78,37.19-4.82,55.66-1.36,27,5.06,52.9,13.69,75.39,30,27.19,19.77,37.82,47.56,37.8,80.44,0,28.37-9.3,54.82-15.7,81.92-4.9,20.75-9.77,41.67-5.38,63.27,1.67,8.22,4.12,17.89,12.65,19.38,7.44,1.3,11.68-7.77,15-13.9,18.09-33.25,24.17-68.44,14.93-105.56-4.94-19.84-9.82-39.57-5.08-60.17.8-3.47,1.54-7,4.94-10.74,1.12,7,2,13.18,3.1,19.29a250.77,250.77,0,0,0,20.12,62.61c5.92,12.41,6.58,24.3,2.69,37.15-8.54,28.18-21.38,54.63-36.82,79.29-14.28,22.8-18.33,46.88-19.29,72.65-1.17,31.18-28.82,41.09-53.44,44.89-6.42,1-10.12-3.54-13.68-8.06-16.74-21.19-34.28-41.61-55.66-58.41-16.79-13.21-35-23.26-56.52-26.2-6.61-.91-9.38-5.61-11.82-10.67-7-14.53-11.09-30.13-16.19-45.36-1-3-1.26-6.39-5-9.11-2.3,5-1.11,9.65-.21,14.15,2,10,4.48,19.84,6.31,29.84,2.26,12.39,0,23.24-10.47,31.87-8.86,7.3-17,15.46-25.27,23.49-15.47,15.09-27.93,31.78-33.56,53.45-4.22,16.21-11.85,31.37-24,43.56-12.64,12.65-25.41,14.3-41.07,5.46-13.27-7.5-24.63-17.5-35.85-27.65-14.08-12.73-29-23.54-48.77-25.76-9.7-1.1-18.2-6-25.31-12.5-21.81-19.87-36.58-44.34-41-73.45-6-39.29-13-78.3-23-116.76a35.58,35.58,0,0,1-.46-4.39c4.75.94,6,4.51,7.7,7.29,18,28.77,23.82,60.84,24.87,94a43.87,43.87,0,0,0,5,19.78c12.49,23.5,28.63,44,49.25,61a74.11,74.11,0,0,0,6.38,4.64,39,39,0,0,0,4.84,2.13c-6.12-15.76-6.79-31.33-8.34-46.89-2.72-27.24-11.81-53.08-28.43-74.59-45.26-58.58-24.86-134.84,25.38-177.07C636,674,649.29,662.61,668.1,661.85c26.69-1.08,43.75,12.32,48.89,38.51.94,4.8,1.65,9.65,2.58,15.11,7.07-2.72,11.32-6.71,11.82-14.24,2.18-33.09-17.74-58-50.35-63.41-9-1.51-16.88.84-24.51,5-17,9.26-32.07,21.5-48.38,31.91,16.93-26.05,37.4-47.85,69.77-53.52,15-2.63,29.38.61,41.72,10.66,18.31,14.92,30.1,33.79,34.48,56.94,2.1,11.07,1.62,20.72-8.44,30-19.42,17.88-34.46,39.6-45.38,63.87-2.54,5.63-4.69,11.4-4.41,18.08,25-42.66,54.6-80.39,104.57-94.46C850.27,692.23,894.91,708.78,939.79,734.44ZM684.26,891c1.51-.56,2-.58,2.08-.79,1.75-3.14,3.38-6.34,5.17-9.45,12.82-22.22,25.41-44.62,47.2-59.8,18-12.58,25.69-12.25,42.25,2.44,5.45,4.83,9.83,4,14.1-1.49,5.88-7.5,1.58-12.71-3.77-17.75-3.32-3.12-6.43-6.9-2.29-10.85s9.57-4.35,14.29-.19a14.63,14.63,0,0,1,4.69,9.52c.73,6.2,1.38,12.42,1.91,18.64A35.22,35.22,0,0,0,815.26,838c2.53,3.83,6,5.76,11,4.26,5.13-1.57,6.48-5.2,5.83-9.89-.53-3.89-1.57-7.71-2.22-11.59-.26-1.5-.82-3.41,1.12-4.27s3.23.6,4,2a89.21,89.21,0,0,1,5.47,10.37c2.41,5.66,6.18,7.16,11.81,4.86,6.19-2.53,6.37-6.95,3.78-12-2.24-4.37-4.9-8.53-7.36-12.79-3.32-5.73-6.41-11.54-5.62-18.49.67-5.91,3.25-10.67,10-9.28,6.21,1.29,7.11,6,4.6,11.49a11.27,11.27,0,0,0-1.09,4.77c.15,4.87,1.63,9.34,6.76,10.91,5.8,1.78,8.27-2.21,10.11-6.83,1.94-4.91,4.29-10,3.56-15.19-1.41-10,3.93-10.8,11.43-9.46,1.93.34,3.84.83,5.76,1.27,28.22,6.4,53.34,20.06,78.63,33.37,1.93,1,3.73,4.1,6.72,1.7-23.44-29.6-57.25-44.78-97.28-49.9-6.47-.83-11.58-2.47-16.83-6.3-39.86-29.09-92.08-7.28-99.35,31.12-.92,4.85-3.9,5.71-8.22,6.63-21.91,4.62-38.94,16.56-51.51,35.16C694,848.18,687.72,868.6,684.26,891Zm319.19-240.68c-10.67-3-17.94-.43-24.81,3.29-29.89,16.2-41.39,60.37-23.43,89.45,13.49,21.86,41,30.5,62.59,19.68,24.41-12.24,37.67-46.23,27.21-72.17-1.5,12.79-2.85,24.61-9.67,34.7-8.3,12.3-19.39,19.86-34.83,17.62-14.86-2.16-23.88-11.77-28.33-25.57-3.6-11.15-3.47-22.7-.9-34.09C975,666.92,986,657,1003.45,650.33ZM612.37,759.89c4.29-.55,7.5-1.13,10.73-1.35,15.2-1,15.62-.47,10.71,13.76-4,11.69,2.34,19.76,14.67,18,4.36-.63,8.49-2.88,12.75-4.4,3.76,18-2.23,34-15.62,41.1-8.85,4.7-18.22,5.07-27.68,1.9-9.19-3.07-15-10.3-20.78-17.68,1.57,11.59,6,21.6,14.07,29.76,23,23.39,57.67,15.72,68.8-15.13,9-25-.72-55.75-22.72-72C642.31,742.76,625.82,744.78,612.37,759.89Zm403.73-61.78a15.07,15.07,0,0,0,14.82-15c-.12-7.68-7.61-14.91-15.35-14.82-7.92.09-14.64,7.2-14.5,15.34A14.35,14.35,0,0,0,1016.1,698.11ZM885,842.65c.08-5.43-3.45-7.83-8-7.88-4.36,0-7.35,3.23-7.4,7.53,0,4.87,3,7.86,8.09,7.68C882.19,849.82,884.91,847.38,885,842.65Zm8.19,38.6c4.76-.47,7.71-2.9,7.63-8-.08-4.78-3.28-7.16-7.47-7.31-5-.19-7.91,3.34-7.83,8C885.62,878.07,888.44,880.93,893.21,881.25Zm17.17-51c-4.39,1.38-8.18,3.26-7.55,8.65.53,4.53,3.46,7.08,7.93,6.87,5-.22,7.93-3.28,7.49-8.27C917.86,833,914.51,830.94,910.38,830.2ZM746.75,885.34c-.73-4.36-3.24-7.48-7.58-7.49-4.72,0-8.09,3-8,7.93s3.4,7.62,8.38,7.3C744.15,892.78,746.25,889.71,746.75,885.34ZM942.6,860.46c-.32-4.73-2.92-7.19-7.61-7.16s-7.66,2.83-7.62,7.26c0,4.83,3.2,8.18,8.23,7.89C940.05,868.2,942.54,865.14,942.6,860.46Zm-180.12-14.8c-.92-4.37-3.51-7.49-7.81-7.44-4.69,0-8,3-7.8,8.06s3.48,7.65,8.47,7.21C759.87,853.08,761.91,849.88,762.48,845.66Zm141.29-33.54c-.33-4.39-2.42-7.54-7.12-7.77s-7.67,2.3-8,6.89c-.41,5.11,2.61,8.14,7.57,8.41S903.06,816.58,903.77,812.12Zm-124,67.94c-1.07-4.28-3.27-7.36-8.06-7.13-5.25.26-7.64,3.44-7.24,8.49.37,4.84,3.74,6.89,8.11,6.57C777.13,887.65,779.33,884.45,779.76,880.06Zm22.82-27.41c-.35-4.58-2.74-7.33-7.41-7.37-5.24,0-7.75,3.14-7.59,8.09.14,4.73,3.33,7.16,7.77,7S802.45,857.38,802.58,852.65Zm7.95,37.29c-.44-3.45-1.84-6.79-6.86-7.1-4.72-.29-7.68,2.12-8.25,6.54-.67,5.08,2.37,8.24,7.25,8.53C807.15,898.18,809.82,895.33,810.53,889.94Z" transform="translate(-405.86 -447.08)"/><path d="M484.28,827.88c0-16.69,0-33.42-3.91-49.89-3-12.69-8.86-23-19.53-30.78-14.88-10.9-28.8-23-39.78-38-19.81-27.09-20.13-54.24-1.75-82.31,10.74-16.41,25.41-28.22,42.13-37.78,27.61-15.78,56.41-29.34,82.34-48.22,14.54-10.59,31.58-17.64,50.55-17,11.19.4,12.55,2.32,7.74,12.34-19.86,41.4-40.81,82.3-59.55,124.2-20.26,45.28-30,93.49-34.86,142.75-1.64,16.64-2.13,33.43-5.67,49.85a36.28,36.28,0,0,1-2.25,7.48c-1.72,3.75-4.3,7-9.06,5.7-4.29-1.14-6.38-4.4-6.39-8.85C484.26,847.58,484.28,837.73,484.28,827.88Z" transform="translate(-405.86 -447.08)"/><path d="M960.19,447.08c30.71,1.19,60,9.52,88.37,21.19,35.22,14.5,70.19,29.64,101.46,51.93,2.13,1.53,4.17,3.2,6.18,4.9,26.37,22.23,27.71,40.39,4.57,65.7-8.64,9.45-12.56,20.44-13,33.07-.58,14.75,1.3,29.58-1.63,44.24-3.22,16.12-8.41,18.26-24.3,18.29-17.87,0-25-10.87-30.91-24.14-11.67-26-19.76-53.53-32.65-79.06-13-25.8-29-49.09-53.22-66-20.12-14.06-43.18-16.44-66.46-18.68-4.56-.44-9.13-1-13.68-1.58-8.14-1.09-16-3.2-18-12.53-2.14-10.07.82-18.93,9.18-25.39C929,449,944.36,447.62,960.19,447.08Z" transform="translate(-405.86 -447.08)"/><path d="M872.36,938.45c24.31,2.58,45.85,16.42,64.9,34.72,10.74,10.32,19.58,22.14,23.25,37.05,3.72,15.12-3.35,25.39-18.81,26.57a50.91,50.91,0,0,1-14.69-.85c-23.46-5.21-47-4.41-70.52-1.27-12.51,1.66-24.22,5.58-34.83,12.69-8.2,5.5-17,10.09-26.56,12.67-10.21,2.75-15.45-1.44-12.82-11.53,9.08-35,22.19-68.12,49-93.78C841.74,944.71,854.53,938.83,872.36,938.45Z" transform="translate(-405.86 -447.08)"/><path d="M656.71,508.87c8.07-9.51,16.66-13.4,25.8-15.74,13.29-3.41,26.66-2.51,39.86,1.24,10.55,3,16.45,10,18.66,20.6,3.29,15.8,0,31.4-1.34,47-1.48,17.29-1.05,34,9,50.64-8.9-2.12-12.59-8.08-15.65-14.29-9.36-19-11.23-39.59-11.79-60.3-.61-22.69-8.46-30.74-31.61-31.84C679.38,505.7,669.34,507.21,656.71,508.87Z" transform="translate(-405.86 -447.08)"/><path d="M798,580c-11.86-11.81-11.46-23.57-8.39-35.64,3.81-15,7.44-29.86,5.23-45.63-1.27-9-5-16.67-11.3-24,6.28,0,11.48-.1,16.68,0,13.41.29,17.37,4.21,17.54,17.75.17,13.2-4.41,25.35-10.51,36.57C798.94,544.31,795.51,560.14,798,580Z" transform="translate(-405.86 -447.08)"/></svg>
                 <div class="content">
@@ -436,7 +437,7 @@
                         aberto e bem mais fácil de usar!</p>
                 </div>
             </div>
-            <div class="box">
+            <div class="box ps-rl ovfl-hdd">
                 <h2>Less</h2>
                 <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="m22.991 10.958v.005c0 .231.091.441.24.595.178.165.418.266.681.266.031 0 .061-.001.092-.004h-.004v1.05c-.026-.002-.057-.004-.088-.004-.263 0-.503.101-.682.267l.001-.001c-.149.157-.24.37-.24.604v.015-.001q0 .356.056.975t.056 1.069c.006.058.01.125.01.193 0 .421-.137.81-.37 1.125l.004-.005c-.274.238-.635.383-1.029.383-.054 0-.107-.003-.159-.008l.007.001h-.75v-.936h.229v-.038c.022.002.047.004.073.004.174 0 .333-.066.453-.173l-.001.001c.098-.154.156-.342.156-.544 0-.039-.002-.078-.007-.117v.005l-.075-1.95c-.003-.036-.004-.078-.004-.12 0-.308.078-.597.215-.85l-.005.009c.152-.219.382-.376.649-.43l.007-.001v-.075c-.27-.054-.499-.203-.654-.41l-.002-.003c-.133-.243-.212-.532-.212-.839 0-.048.002-.096.006-.143v.006l.075-1.95c.004-.034.006-.074.006-.114 0-.199-.051-.386-.14-.548l.003.006c-.119-.109-.278-.175-.452-.175-.032 0-.064.002-.095.007h.004-.225v-.898h.75c.046-.005.099-.007.152-.007.394 0 .755.145 1.031.384l-.002-.002c.229.31.366.699.366 1.12 0 .068-.004.135-.011.201l.001-.008q0 .45-.056 1.069t-.059.994zm-3.976 1.2q1.614.525 1.614 1.801v.029c0 .54-.248 1.022-.637 1.338l-.003.002c-.447.343-1.015.549-1.63.549-.06 0-.12-.002-.179-.006h.008c-.42-.01-.818-.091-1.186-.233l.024.008c-.405-.136-.755-.341-1.053-.603l.003.003.787-1.162c.414.352.948.574 1.533.6h.005q.75 0 .75-.487 0-.225-.338-.45c-.211-.111-.46-.213-.718-.292l-.031-.008-.15-.075q-1.538-.6-1.538-1.726c0-.015-.001-.032-.001-.05 0-.518.24-.98.616-1.279l.003-.003c.418-.318.948-.51 1.522-.51.045 0 .09.001.135.004h-.006c.779.022 1.489.301 2.051.755l-.006-.005-.785 1.048c-.347-.282-.788-.461-1.27-.487h-.005q-.64 0-.64.45c.014.177.115.328.26.411l.003.001c.173.108.372.197.583.258l.017.004q.19.074.266.112zm-13.466 2.214h.225l.223 1.275c-.25.096-.54.151-.842.151-.02 0-.041 0-.061-.001h.003q-1.614 0-1.614-2.026v-5.626h-.526c-.023-.003-.05-.005-.078-.005-.167 0-.318.066-.429.174-.086.157-.137.344-.137.542 0 .04.002.08.006.118v-.005l.038 1.914c.003.042.005.091.005.141 0 .311-.076.604-.21.863l.005-.01c-.149.215-.382.363-.652.393h-.004v.075c.274.055.504.212.654.428l.002.003c.133.243.21.533.21.84 0 .042-.001.084-.004.125v-.006q0 .375-.038 1.05v.9c-.003.033-.005.071-.005.109 0 .207.05.401.139.573l-.003-.007c.107.118.26.192.432.192.026 0 .052-.002.078-.005h-.003.226v.9h-.754c-.045.005-.098.007-.151.007-.395 0-.756-.145-1.033-.386l.002.002c-.229-.31-.366-.699-.366-1.12 0-.068.004-.136.011-.202l-.001.008q0-.45.056-1.069t.056-.975c0-.007 0-.014 0-.022 0-.226-.092-.43-.24-.578-.181-.152-.416-.244-.673-.244-.034 0-.067.002-.099.005h.004v-1.05c.026.002.057.004.088.004.263 0 .503-.101.682-.267l-.001.001c.149-.154.24-.364.24-.595 0-.002 0-.004 0-.006q0-.338-.056-.975t-.056-1.085c-.006-.058-.01-.125-.01-.193 0-.421.137-.81.37-1.125l-.004.005c.274-.238.635-.383 1.029-.383.054 0 .107.003.159.008l-.007-.001h2.814v6.678c-.002.016-.002.034-.002.053 0 .12.036.231.097.324l-.001-.002c.048.063.122.104.206.106zm8.702-2.214q1.614.525 1.614 1.801v.029c0 .54-.248 1.022-.637 1.338l-.003.002c-.447.343-1.015.549-1.63.549-.06 0-.12-.002-.179-.006h.008c-.428-.005-.835-.088-1.211-.234l.024.008c-.41-.146-.765-.35-1.075-.605l.006.005.787-1.162c.414.352.948.574 1.533.6h.005q.75 0 .75-.487 0-.225-.338-.45c-.211-.111-.46-.213-.718-.292l-.031-.008-.113-.075q-1.576-.6-1.576-1.726c0-.013-.001-.027-.001-.042 0-.525.25-.991.637-1.287l.004-.003c.427-.318.965-.509 1.547-.509.043 0 .086.001.128.003h-.006c.767.018 1.466.299 2.012.755l-.005-.004-.786 1.049c-.337-.277-.764-.456-1.231-.487h-.007q-.675 0-.675.45c.001.181.107.338.26.412l.003.001c.184.111.397.201.623.259l.017.004q.186.074.261.112zm-5.814-2.588c.037-.002.081-.003.124-.003.694 0 1.316.313 1.73.806l.003.003c.411.525.658 1.194.658 1.921 0 .043-.001.087-.003.13v-.006c-.003.241-.03.474-.079.698l.004-.023v.038h-3.562c.034.388.221.726.499.958l.002.002c.241.201.553.323.894.323.051 0 .102-.003.152-.008l-.006.001c.486-.011.937-.149 1.325-.382l-.012.007.56 1.05c-.583.421-1.312.674-2.101.675-.034.001-.073.002-.113.002-.789 0-1.504-.316-2.026-.827-.524-.551-.846-1.297-.846-2.119 0-.04.001-.079.002-.118v.006c-.003-.054-.005-.118-.005-.182 0-.809.316-1.544.832-2.089l-.001.001c.49-.532 1.19-.864 1.967-.864h.005zm-1.125 2.476h2.138q0-1.162-1.013-1.162c-.285 0-.543.115-.731.3-.221.225-.366.524-.394.857z"/></svg>
@@ -446,6 +447,45 @@
                         flexível e dinâmico para desenvolvimento web. 
                         Cada vez mais é exigido do desenvolvedor front-end um melhor desempenho, 
                         e essa tecnologia web facilita e muito o desenvolvimento de aplicações.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contatos" class="contatos">
+        <h1>Contatos</h1>
+        <div class="container-contatos">
+            <img src="./images/bianca.contatos.jpeg" alt="">
+            <div class="content-contatos">
+                <h2 class="contatos-text">Vamos trabalhar juntos?</h2>
+                <p class="contatos-paragh"> 
+                    Se você gostou do meu trabalho e quer que eu tire sua ideia do papel ou
+                    faça parte do seu time, entre em contato comigo!
+                </p>
+                <div class="nav-contatos jt-cot_ctr">
+                    <div class="caixa ps-rl ovfl-hdd">
+                        <div class="icon linkedin">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </div>
+                        <p>Linkedin</p>
+                    </div>
+                    <div class="caixa ps-rl ovfl-hdd">
+                        <div class="icon instagram">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </div>
+                        <p>Instagram</p>
+                    </div>
+                    <div class="caixa ps-rl ovfl-hdd">
+                        <div class="icon github">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </div>
+                        <p>Github</p>
+                    </div>
+                    <div class="caixa ps-rl ovfl-hdd">
+                        <div class="icon email">
+                            <ion-icon name="mail-outline"></ion-icon>
+                        </div>
+                        <p>Gmail</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -10,18 +10,21 @@
 :root {
     --pink-dark: #ff4a836b;
     --first-color: #ef32d9;
+    --title-pink: #ff266a;
     --second-color: #89fffd;
     --size: 100px;
     --speed: 4s;
+    --black-body: #0C0D14;
+    --black-nav: #1A1B28;
 }
 
 body {
-    background: #0C0D14;
+    background: var(--black-body);
 }
 
 nav {
     position: fixed;
-    background: #1A1B28;
+    background: var(--black-nav);
     padding: 1.25rem;
     width: 100%;
     height: 4rem;
@@ -33,14 +36,30 @@ html {
     scroll-behavior: smooth;
 }
 
-.left {
+.jt-cot_str {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
+}
+
+.jt-cot_ctr {
+    display: flex;
+    justify-content: center;
+}
+
+.ovfl-hdd {
+    overflow: hidden;
+}
+
+.ps-rl {
+    position: relative;
+}
+
+.hamburguer-menu_left {
     text-align: start;
     margin: 0 80px;
 }
 
-.left h3 {
+.hamburguer-menu_left h3 {
     color: white;
     margin: 0;
     text-transform: uppercase;
@@ -48,8 +67,8 @@ html {
     font-weight: 800;
 }
 
-.left span {
-    color: #ff266a;
+.hamburguer-menu_left span {
+    color: var(--title-pink);
 }
 
 .sidebar {
@@ -59,7 +78,7 @@ html {
     margin-top: 4rem;
     padding-top: 1rem;
     left: 0;
-    background: #0C0D14;
+    background: var(--black-body);
     border-right: 1px solid #28293D;
     transition: 0.5s;
     transition-property: left;
@@ -67,19 +86,19 @@ html {
     z-index: 900;
 }
 
-.sidebar .image {
-    width: 130px;
-    height: 130px;
+.sidebar .sidebar_image {
+    width: 50%;
+    height: 5%;
     max-width: 100%;
     min-width: 50%;
     object-fit: cover;
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
-    border-radius: 100%;
+    border-radius: 40%;
 }
 
-.sidebar .image:hover {
+.sidebar .sidebar_image:hover {
     -moz-transform: scale(1.2);
     -webkit-transform: scale(1.2);
     transform: scale(1.2);
@@ -87,7 +106,7 @@ html {
 }
 
 .sidebar h2 {
-    color: #ff266a;
+    color: var(--title-pink);
     margin-top: 10px;
     font-size: 20px;
     margin-bottom: 10px;
@@ -115,7 +134,6 @@ html {
     color: #6842FF;
     font-size: 1.3rem; 
     width: 2rem;
-    overflow: hidden;
     vertical-align: sub;
 }
 
@@ -220,7 +238,6 @@ p {
 .minhaHistoria .img-container  {
     width: 60%;
     text-align: center;
-    position: relative;
     top: 40px;
 }
 
@@ -252,8 +269,6 @@ p {
 }
 
 .about__cards {
-    display: flex;
-    justify-content: flex-start;
     align-items: center;
     margin-top: 15px;
 }
@@ -357,7 +372,6 @@ section .container-card {
 
 .projetos {
     display: flex;
-    overflow: hidden;
     scroll-behavior: smooth;
 }
 
@@ -462,57 +476,6 @@ section .card-projetos .imageCard-projetos img {
     height: 25px;
 }
 
-.card-projetos .nivel-dificuldade-2 {
-    margin-top: 5px;
-} 
-
-.card-projetos .nivel-dificuldade-2 svg {
-    fill: yellow;
-    width: 25px;
-    height: 25px;
-}
-
-.card-projetos .nivel-dificuldade-3 {
-    margin-top: 5px;
-} 
-
-.card-projetos .nivel-dificuldade-3 svg {
-    fill: yellow;
-    width: 25px;
-    height: 25px;
-}
-
-.card-projetos .nivel-dificuldade-4 {
-    margin-top: 5px;
-} 
-
-.card-projetos .nivel-dificuldade-4 svg {
-    fill: yellow;
-    width: 25px;
-    height: 25px;
-}
-
-.card-projetos .nivel-dificuldade-5 {
-    margin-top: 5px;
-} 
-
-.card-projetos .nivel-dificuldade-5 svg {
-    fill: yellow;
-    width: 25px;
-    height: 25px;
-}
-
-.card-projetos .nivel-dificuldade-6 {
-    margin-top: 5px;
-} 
-
-.card-projetos .nivel-dificuldade-6 svg {
-    fill: yellow;
-    width: 25px;
-    height: 25px;
-}
-
-
 .nome-projeto span {
     color: #fff;
 }
@@ -532,8 +495,8 @@ section .card-projetos .imageCard-projetos img {
 .Desc-nivelDificuldade-2 {
     font-size: 14px;
     font-weight: 500;
-    margin-top: 15px;
-} 
+    margin-top: 28px;
+}
 
 .Desc-nivelDificuldade-3 {
     font-size: 14px;
@@ -545,19 +508,7 @@ section .card-projetos .imageCard-projetos img {
     font-size: 14px;
     font-weight: 500;
     margin-top: 48px;
-} 
-
-.Desc-nivelDificuldade-5 {
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 28px;
-} 
-
-.Desc-nivelDificuldade-6 {
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 28px;
-} 
+}  
 
 .nome-projeto .desenvolvimento {
     margin-top: 10px;
@@ -567,46 +518,6 @@ section .card-projetos .imageCard-projetos img {
 }
 
 .card-projetos .github {
-    position: relative;
-    top: 14px;
-    border-radius: 10px;
-    border: none;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 800;
-    background: hsl(245, 75%, 52%);
-    padding: 10px 30px;
-    cursor: pointer;
-}
-
-.card-projetos .github-2 {
-    position: relative;
-    top: 14px;
-    border-radius: 10px;
-    border: none;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 800;
-    background: hsl(245, 75%, 52%);
-    padding: 10px 30px;
-    cursor: pointer;
-}
-
-.card-projetos .github-3 {
-    position: relative;
-    top: 14px;
-    border-radius: 10px;
-    border: none;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 800;
-    background: hsl(245, 75%, 52%);
-    padding: 10px 30px;
-    cursor: pointer;
-}
-
-.card-projetos .github-4 {
-    position: relative;
     top: 14px;
     border-radius: 10px;
     border: none;
@@ -633,8 +544,6 @@ section .card-projetos .imageCard-projetos img {
     border-radius: 10px;
     padding: 20px;
     margin: 10px;
-    position: relative;
-    overflow: hidden;
 }
 
 .box h2 {
@@ -695,4 +604,116 @@ section .card-projetos .imageCard-projetos img {
     font-weight: 500;
     color: #fff;
     letter-spacing: 1px;
+}
+
+.contatos {
+    padding: 0 150px;
+    text-align: center;
+}
+
+.contatos .container-contatos {
+    display: flex;
+    margin: 50px 90px;
+    max-width: 1400px;
+}
+
+.contatos .container-contatos .content-contatos {
+    text-align: left;
+    margin: 40px;
+}
+
+.contatos .container-contatos img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.contatos-text {
+    font-size: 30px;
+    background: -webkit-linear-gradient(#D1C4E9, #5b51ce);   
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.contatos-paragh {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.caixa {
+    width: 65px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin: 0.6rem;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+
+.caixa:hover {
+    width: 160px;
+    background: #0e76a8;
+    border-radius: 35px;
+    color: #fff;
+    box-shadow: 0 0 50px #258ad377;
+}
+
+.caixa:nth-child(2):hover {
+    background-color: #c32aa3;
+    box-shadow: 0 0 50px #b315917c;
+}
+
+.caixa:nth-child(3):hover {
+    background-color: rgb(94, 34, 131);
+    box-shadow: 0 0 50px #b315917c;
+}
+
+.caixa:nth-child(4):hover {
+    background-color: #C71610;
+    box-shadow: 0 0 50px #b6211c;
+}
+
+.nav-contatos p {
+    transform: translate(60px);
+}
+
+.caixa .icon {
+    position: absolute;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 1s ease;
+}
+
+.github {
+    background-color: rgb(94, 34, 131);
+}
+
+.linkedin {
+    background-color: #0e76a8;
+}
+
+.instagram {
+    background-color: #c32aa3;
+}
+
+.email {
+    background-color: #C71610;
+}
+
+.caixa ion-icon {
+    width: 30px;
+    height: 30px;
 }
