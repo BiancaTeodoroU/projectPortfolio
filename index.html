@@ -18,7 +18,7 @@
         <label for="check" class="color-svg">
             <ion-icon name="menu-outline" id="sidebar_btn"></ion-icon>
         </label>
-        <div class="hamburguer-menu_left jt-cot_str">
+        <div class="hamburger-menu_left jt-cot_str">
             <h3>Front <span>Bia</span></h3>
         </div>
     </nav>
@@ -29,11 +29,11 @@
             <img src="./images/BiancaTeodoroU.png" class="sidebar_image" alt="">
             <h2>Bianca</h2>
         </center>
-        <a href="#"><ion-icon name="person-outline"></ion-icon><span>Sobre mim</span></a>
-        <a href="#"><ion-icon name="briefcase-outline"></ion-icon><span>Serviços</span></a>
-        <a href="#"><ion-icon name="code-outline"></ion-icon><span>Projetos</span></a>
-        <a href="#"><ion-icon name="bulb-outline"></ion-icon><span>Conhecimentos</span></a>
-        <a href="#"><ion-icon name="call-outline"></ion-icon><span>Contato</span></a>
+        <a href="#aboutme"><ion-icon name="person-outline"></ion-icon><span>Sobre mim</span></a>
+        <a href="#service"><ion-icon name="briefcase-outline"></ion-icon><span>Serviços</span></a>
+        <a href="#projects"><ion-icon name="code-outline"></ion-icon><span>Projetos</span></a>
+        <a href="#knowledge"><ion-icon name="bulb-outline"></ion-icon><span>Conhecimentos</span></a>
+        <a href="#contacts"><ion-icon name="call-outline"></ion-icon><span>Contato</span></a>
     </div>
     <!--sidebar final-->
     <!--Sobre mim-->
@@ -67,9 +67,9 @@
             </div>
         </div>
     </section>
-    <section id="minhaHistoria" class="minhaHistoria ps-rl">
-        <div class="container-minhaHistoria">
-            <h1 class="title-MinhaHistoria">Curiosidades</h1>
+    <section id="myStory" class="myStory ps-rl">
+        <div class="container-myStory">
+            <h1 class="title-myStory">Curiosidades</h1>
             <p>
                 Minha história com programação começou logo após eu ter concluido o ensino médio, 
                 Logo depois consegui meu primeiro emprego aos 18 anos como auxiliar de escritório em geral
@@ -86,8 +86,8 @@
     </section>
     <!--Sobre mim Final-->
     <!--Serviços-->
-    <section id="Serviços" class="service">
-        <div class="fundo-color">
+    <section id="service" class="service">
+        <div>
             <h1>Serviços</h1>
             <div class="services-container">
                 <div class="service-card">
@@ -110,7 +110,7 @@
         </div>
     </section>
     <!--Serviços Final-->
-    <section id="projetos">
+    <section id="projects">
         <h1 class="title">Projetos</h1>
         <div class="container-card">
             <div class="arrow arrow-left">
@@ -140,19 +140,19 @@
                 </button>
             </div>
 
-            <div class="content-projetos">
-                <div id="slider" class="projetos ovfl-hdd">
-                    <div class="card-projetos ps-rl">
-                        <div class="cardContent-projetos">
-                            <div class="imageCard-projetos">
+            <div class="content-projects">
+                <div id="slider" class="projects ovfl-hdd">
+                    <div class="card-projects ps-rl">
+                        <div class="cardContent-projects">
+                            <div class="imageCard-projects">
                                 <img src="./images/LayoutGym.jpeg" alt="">
                             </div>
-                            <div class="nome-projeto">
-                                <span class="nome">Tela de login em pug</span>
-                                <span class="desenvolvimento">Tela de login feita em pug, design feito por mim no figma e executado em pug no intuito de aprender mais sobre pug e explorar oque pode ser feito utilizando o framework.</span>
-                                <span class="Desc-nivelDificuldade">Nivel de dificuldade</span>
+                            <div class="name-projects">
+                                <span class="name">Tela de login em pug</span>
+                                <span class="development">Tela de login feita em pug, design feito por mim no figma e executado em pug no intuito de aprender mais sobre pug e explorar oque pode ser feito utilizando o framework.</span>
+                                <span class="Desc-difficulty-level">Nivel de dificuldade</span>
                             </div>
-                            <div class="nivel-dificuldade">
+                            <div class="difficulty-level">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                                     <path d="m56,237 74-228 74,228L10,96h240"/>
                                 </svg>
@@ -164,21 +164,21 @@
                                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.668 8.626l8.332 1.159-6.065 5.874 1.48 8.341-7.416-3.997-7.416 3.997 1.481-8.341-6.064-5.874 8.331-1.159 3.668-7.626 3.669 7.626zm-6.67.925l-6.818.948 4.963 4.807-1.212 6.825 6.068-3.271 6.069 3.271-1.212-6.826 4.964-4.806-6.819-.948-3.002-6.241-3.001 6.241z"/></svg>
                             </div>
                             <div class="button">
-                                <button class="github ps-rl">Github</button>
+                                <button onclick="window.open('https://github.com/BiancaTeodoroU/LayoutLoginEmPug')" class="github ps-rl">Github</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card-projetos ps-rl">
-                        <div class="cardContent-projetos">
-                            <div class="imageCard-projetos">
+                    <div class="card-projects ps-rl">
+                        <div class="cardContent-projects">
+                            <div class="imageCard-projects">
                                 <img src="./images/projectBuf.jpeg" alt="">
                             </div>
-                            <div class="nome-projeto">
-                                <span class="nome">Prova de sistema de vendas em flask</span>
-                                <span class="desenvolvimento">Prova com o objetivo de ser feito um sistema de vendas utilizando o framework flask.</span>
-                                <span class="Desc-nivelDificuldade-2">Nivel de dificuldade</span>
+                            <div class="name-projects">
+                                <span class="name">Prova de sistema de vendas em flask</span>
+                                <span class="development">Prova com o objetivo de ser feito um sistema de vendas utilizando o framework flask.</span>
+                                <span class="Desc-difficulty-level-2">Nivel de dificuldade</span>
                             </div>
-                            <div class="nivel-dificuldade">
+                            <div class="difficulty-level">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                                     <path d="m56,237 74-228 74,228L10,96h240"/>
                                 </svg>
@@ -192,21 +192,21 @@
                                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.668 8.626l8.332 1.159-6.065 5.874 1.48 8.341-7.416-3.997-7.416 3.997 1.481-8.341-6.064-5.874 8.331-1.159 3.668-7.626 3.669 7.626zm-6.67.925l-6.818.948 4.963 4.807-1.212 6.825 6.068-3.271 6.069 3.271-1.212-6.826 4.964-4.806-6.819-.948-3.002-6.241-3.001 6.241z"/></svg>
                             </div>
                             <div class="button">
-                                <button class="github ps-rl">Github</button>
+                                <button onclick="window.open('https://github.com/BiancaTeodoroU/projectBuf')" class="github ps-rl">Github</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card-projetos ps-rl">
-                        <div class="cardContent-projetos">
-                            <div class="imageCard-projetos">
+                    <div class="card-projects ps-rl">
+                        <div class="cardContent-projects">
+                            <div class="imageCard-projects">
                                 <img src="./images/formlárioLol.jpeg" alt="">
                             </div>
-                            <div class="nome-projeto">
-                                <span class="nome">Formulário com o tema de league of legends</span>
-                                <span class="desenvolvimento">Formulário feito com o tema de league of legends para poder ser feito testes em API.</span>
-                                <span class="Desc-nivelDificuldade-2">Nivel de dificuldade</span>
+                            <div class="name-projects">
+                                <span class="name">Formulário com o tema de league of legends</span>
+                                <span class="development">Formulário feito com o tema de league of legends para poder ser feito testes em API.</span>
+                                <span class="Desc-difficulty-level-2">Nivel de dificuldade</span>
                             </div>
-                            <div class="nivel-dificuldade">
+                            <div class="difficulty-level">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                                     <path d="m56,237 74-228 74,228L10,96h240"/>
                                 </svg>
@@ -220,21 +220,21 @@
                                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.668 8.626l8.332 1.159-6.065 5.874 1.48 8.341-7.416-3.997-7.416 3.997 1.481-8.341-6.064-5.874 8.331-1.159 3.668-7.626 3.669 7.626zm-6.67.925l-6.818.948 4.963 4.807-1.212 6.825 6.068-3.271 6.069 3.271-1.212-6.826 4.964-4.806-6.819-.948-3.002-6.241-3.001 6.241z"/></svg>
                             </div>
                             <div class="button">
-                                <button class="github ps-rl">Github</button>
+                                <button onclick="window.open('https://github.com/BiancaTeodoroU/FormularioLol')" class="github ps-rl">Github</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card-projetos ps-rl">
-                        <div class="cardContent-projetos">
-                            <div class="imageCard-projetos">
+                    <div class="card-projects ps-rl">
+                        <div class="cardContent-projects">
+                            <div class="imageCard-projects">
                                 <img src="./images/layoutInTreineer.jpeg" alt="">
                             </div>
-                            <div class="nome-projeto">
-                                <span class="nome">Layout desafio</span>
-                                <span class="desenvolvimento">Desafio da plataforma frontendmentor.io para reprodução de uma lady page.</span>
-                                <span class="Desc-nivelDificuldade-4">Nivel de dificuldade</span>
+                            <div class="name-projects">
+                                <span class="name">Layout desafio</span>
+                                <span class="development">Desafio da plataforma frontendmentor.io para reprodução de uma lady page.</span>
+                                <span class="Desc-difficulty-level-4">Nivel de dificuldade</span>
                             </div>
-                            <div class="nivel-dificuldade">
+                            <div class="difficulty-level">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                                     <path d="m56,237 74-228 74,228L10,96h240"/>
                                 </svg>
@@ -248,21 +248,21 @@
                                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.668 8.626l8.332 1.159-6.065 5.874 1.48 8.341-7.416-3.997-7.416 3.997 1.481-8.341-6.064-5.874 8.331-1.159 3.668-7.626 3.669 7.626zm-6.67.925l-6.818.948 4.963 4.807-1.212 6.825 6.068-3.271 6.069 3.271-1.212-6.826 4.964-4.806-6.819-.948-3.002-6.241-3.001 6.241z"/></svg>
                             </div>
                             <div class="button">
-                                <button class="github ps-rl">Github</button>
+                                <button onclick="window.open('https://github.com/BiancaTeodoroU/TreinoHTMLeCSS')" class="github ps-rl">Github</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card-projetos ps-rl">
-                        <div class="cardContent-projetos">
-                            <div class="imageCard-projetos">
+                    <div class="card-projects ps-rl">
+                        <div class="cardContent-projects">
+                            <div class="imageCard-projects">
                                 <img src="./images/provaDevWebFront.jpeg" alt="">
                             </div>
-                            <div class="nome-projeto">
-                                <span class="nome">Prova Dev web Front-end</span>
-                                <span class="desenvolvimento">Prova de desenvolvimento web front-end que tinha como objetivo aprender mais sobre HTML, CSS, JavaScript e como utilizar o bootstrap.</span>
-                                <span class="Desc-nivelDificuldade">Nivel de dificuldade</span>
+                            <div class="name-projects">
+                                <span class="name">Prova Dev web Front-end</span>
+                                <span class="development">Prova de desenvolvimento web front-end que tinha como objetivo aprender mais sobre HTML, CSS, JavaScript e como utilizar o bootstrap.</span>
+                                <span class="Desc-difficulty-level">Nivel de dificuldade</span>
                             </div>
-                            <div class="nivel-dificuldade">
+                            <div class="difficulty-level">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                                     <path d="m56,237 74-228 74,228L10,96h240"/>
                                 </svg>
@@ -280,21 +280,21 @@
                                 </svg>
                             </div>
                             <div class="button">
-                                <button class="github ps-rl">Github</button>
+                                <button onclick="window.open('https://github.com/BiancaTeodoroU/provaDevWebFront-end')" class="github ps-rl">Github</button>
                             </div>
                         </div>
                     </div>
-                    <div class="card-projetos ps-rl">
-                        <div class="cardContent-projetos">
-                            <div class="imageCard-projetos">
+                    <div class="card-projects ps-rl">
+                        <div class="cardContent-projects">
+                            <div class="imageCard-projects">
                                 <img src="./images/projectInLadyPage.jpeg" alt="">
                             </div>
-                            <div class="nome-projeto">
-                                <span class="nome">Desafio de reprodução de layout</span>
-                                <span class="desenvolvimento">Desafio para reproduzir um layout da plataforma frontendmentor.io.</span>
-                                <span class="Desc-nivelDificuldade-3">Nivel de dificuldade</span>
+                            <div class="name-projects">
+                                <span class="name">Desafio de reprodução de layout</span>
+                                <span class="development">Desafio para reproduzir um layout da plataforma frontendmentor.io.</span>
+                                <span class="Desc-difficulty-level-3">Nivel de dificuldade</span>
                             </div>
-                            <div class="nivel-dificuldade">
+                            <div class="difficulty-level">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 245">
                                     <path d="m56,237 74-228 74,228L10,96h240"/>
                                 </svg>
@@ -306,7 +306,7 @@
                                 <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M15.668 8.626l8.332 1.159-6.065 5.874 1.48 8.341-7.416-3.997-7.416 3.997 1.481-8.341-6.064-5.874 8.331-1.159 3.668-7.626 3.669 7.626zm-6.67.925l-6.818.948 4.963 4.807-1.212 6.825 6.068-3.271 6.069 3.271-1.212-6.826 4.964-4.806-6.819-.948-3.002-6.241-3.001 6.241z"/></svg>
                             </div>
                             <div class="button">
-                                <button class="github ps-rl">Github</button>
+                                <button  onclick="window.open('https://github.com/BiancaTeodoroU/ProjecTreineer')" class="github ps-rl">Github</button>
                             </div>
                         </div>
                     </div>
@@ -314,9 +314,9 @@
             </div>
         </div>
     </section>  
-    <section id="conhecimentos">
+    <section id="knowledge">
         <h1 class="title">Conhecimentos</h1>
-        <div class="container-conhecimentos">
+        <div class="container-knowledge">
             <div class="box ps-rl ovfl-hdd">
                 <h2>Html</h2>
                 <?xml version="1.0" encoding="iso-8859-1"?>
@@ -451,37 +451,37 @@
             </div>
         </div>
     </section>
-    <section id="contatos" class="contatos">
+    <section id="contacts" class="contacts">
         <h1>Contatos</h1>
-        <div class="container-contatos">
+        <div class="container-contacts">
             <img src="./images/bianca.contatos.jpeg" alt="">
-            <div class="content-contatos">
-                <h2 class="contatos-text">Vamos trabalhar juntos?</h2>
-                <p class="contatos-paragh"> 
+            <div class="content-contacts">
+                <h2 class="contacts-text">Vamos trabalhar juntos?</h2>
+                <p class="contacts-paragh"> 
                     Se você gostou do meu trabalho e quer que eu tire sua ideia do papel ou
                     faça parte do seu time, entre em contato comigo!
                 </p>
-                <div class="nav-contatos jt-cot_ctr">
-                    <div class="caixa ps-rl ovfl-hdd">
-                        <div class="icon linkedin">
+                <div class="nav-contacts jt-cot_ctr">
+                    <div class="border-box ps-rl ovfl-hdd">
+                        <div onclick="window.open('https://www.linkedin.com/in/bianca-teodoro-urtado-ba37a1215/')" class="icon linkedin">
                             <ion-icon name="logo-linkedin"></ion-icon>
                         </div>
                         <p>Linkedin</p>
                     </div>
-                    <div class="caixa ps-rl ovfl-hdd">
-                        <div class="icon instagram">
+                    <div class="border-box ps-rl ovfl-hdd">
+                        <div onclick="window.open('https://www.instagram.com/biancateodorou/')" class="icon instagram">
                             <ion-icon name="logo-instagram"></ion-icon>
                         </div>
                         <p>Instagram</p>
                     </div>
-                    <div class="caixa ps-rl ovfl-hdd">
-                        <div class="icon github">
+                    <div class="border-box ps-rl ovfl-hdd">
+                        <div onclick="window.open('https://github.com/BiancaTeodoroU')" class="icon github">
                             <ion-icon name="logo-github"></ion-icon>
                         </div>
                         <p>Github</p>
                     </div>
-                    <div class="caixa ps-rl ovfl-hdd">
-                        <div class="icon email">
+                    <div class="border-box ps-rl ovfl-hdd">
+                        <div onclick="window.open('mailto:biancaurtado645@gmail.com')" class="icon email">
                             <ion-icon name="mail-outline"></ion-icon>
                         </div>
                         <p>Gmail</p>
@@ -490,6 +490,9 @@
             </div>
         </div>
     </section>
+    <footer>
+        <p>Made by Bianca Teodoro Urtado - 2022</p>
+    </footer>  
     <script>
         feather.replace()
     </script>

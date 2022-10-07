@@ -54,12 +54,12 @@ html {
     position: relative;
 }
 
-.hamburguer-menu_left {
+.hamburger-menu_left {
     text-align: start;
     margin: 0 80px;
 }
 
-.hamburguer-menu_left h3 {
+.hamburger-menu_left h3 {
     color: white;
     margin: 0;
     text-transform: uppercase;
@@ -67,7 +67,7 @@ html {
     font-weight: 800;
 }
 
-.hamburguer-menu_left span {
+.hamburger-menu_left span {
     color: var(--title-pink);
 }
 
@@ -184,7 +184,7 @@ h1, h2 {
     font-weight: 500;
 }
 
-.title-MinhaHistoria {
+.title-myStory {
     color: #fd3675;
     margin-bottom: 20px;
 }
@@ -220,28 +220,28 @@ p {
     margin-bottom: 20px;
 }
 
-.minhaHistoria::before {
+.myStory::before {
     max-width: 100%;
 }
 
-.minhaHistoria {
+.myStory {
     display: flex;
     height: 580px;
     padding: 48px 100px 0;
 }
 
-.minhaHistoria .container-minhaHistoria {
+.myStory .container-myStory {
     width: 50%;
     padding: 70px 35px 0;
 }
 
-.minhaHistoria .img-container  {
+.myStory .img-container  {
     width: 60%;
     text-align: center;
     top: 40px;
 }
 
-.minhaHistoria .img-container img {
+.myStory .img-container img {
     width: 60%;
     max-width: 100%;
     min-width: 60%;
@@ -370,7 +370,7 @@ section .container-card {
     margin: 0 195px;
 }
 
-.projetos {
+.projects {
     display: flex;
     scroll-behavior: smooth;
 }
@@ -406,7 +406,7 @@ section .container-card {
     top: calc(50% - 25px);
 }
 
-section .card-projetos .imageCard-projetos {
+section .card-projects .imageCard-projects {
     width: 200px;
     height: 120px;
     padding: 3px;
@@ -414,7 +414,7 @@ section .card-projetos .imageCard-projetos {
     background: hsl(245, 75%, 52%);
 }
 
-section .card-projetos .imageCard-projetos img {
+section .card-projects .imageCard-projects img {
     width: 100%;
     height: 100%;
     object-fit: fill;
@@ -422,7 +422,7 @@ section .card-projetos .imageCard-projetos img {
     border: 3px solid #fff;
 }
 
-.card-projetos {
+.card-projects {
     position: relative;
     background: #2f303438;
     border-radius: 20px;
@@ -432,15 +432,15 @@ section .card-projetos .imageCard-projetos img {
     box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
 }
 
-.card-projetos:first-child {
+.card-projects:first-child {
     margin-left: 0;
 }
 
-.card-projetos:last-child {
+.card-projects:last-child {
     margin-right: 0;
 }
 
-.card-projetos::before {
+.card-projects::before {
     content: "";
     position: absolute;
     height: 28%;
@@ -449,7 +449,7 @@ section .card-projetos .imageCard-projetos img {
     border-radius: 20px 20px 0 0;
 }
 
-.card-projetos .cardContent-projetos {
+.card-projects .cardContent-projects {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -458,7 +458,7 @@ section .card-projetos .imageCard-projetos img {
     z-index: 90;
 }
 
-.card-projetos .nome-projeto {
+.card-projects .name-projects {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -466,58 +466,58 @@ section .card-projetos .imageCard-projetos img {
     margin-top: 14px;
 }
 
-.card-projetos .nivel-dificuldade {
+.card-projects .difficulty-level {
     margin-top: 5px;
 } 
 
-.card-projetos .nivel-dificuldade svg {
+.card-projects .difficulty-level svg {
     fill: yellow;
     width: 25px;
     height: 25px;
 }
 
-.nome-projeto span {
+.name-projects span {
     color: #fff;
 }
 
-.nome-projeto .nome {
+.name-projects .name {
     text-align: center;
     font-size: 16px;
     font-weight: 600;
 }
 
-.Desc-nivelDificuldade {
+.Desc-difficulty-level {
     font-size: 14px;
     font-weight: 500;
     margin-top: 15px;
 } 
 
-.Desc-nivelDificuldade-2 {
+.Desc-difficulty-level-2 {
     font-size: 14px;
     font-weight: 500;
     margin-top: 28px;
 }
 
-.Desc-nivelDificuldade-3 {
+.Desc-difficulty-level-3 {
     font-size: 14px;
     font-weight: 500;
     margin-top: 42px;
 } 
 
-.Desc-nivelDificuldade-4 {
+.Desc-difficulty-level-4 {
     font-size: 14px;
     font-weight: 500;
     margin-top: 48px;
 }  
 
-.nome-projeto .desenvolvimento {
+.name-projects .development {
     margin-top: 10px;
     font-size: 12px;
     font-weight: 500;
     text-align: center;
 }
 
-.card-projetos .github {
+.card-projects .github {
     top: 14px;
     border-radius: 10px;
     border: none;
@@ -529,7 +529,7 @@ section .card-projetos .imageCard-projetos img {
     cursor: pointer;
 }
 
-.container-conhecimentos {
+.container-knowledge {
     padding: 40px 140px;
     display: flex;
     flex-wrap: wrap;
@@ -606,30 +606,31 @@ section .card-projetos .imageCard-projetos img {
     letter-spacing: 1px;
 }
 
-.contatos {
+.contacts {
     padding: 0 150px;
     text-align: center;
 }
 
-.contatos .container-contatos {
+.contacts .container-contacts {
     display: flex;
     margin: 50px 90px;
     max-width: 1400px;
 }
 
-.contatos .container-contatos .content-contatos {
+.contacts .container-contacts .content-contacts {
+    margin-top: 40px;
+    margin-left: 20px;
     text-align: left;
-    margin: 40px;
 }
 
-.contatos .container-contatos img {
+.contacts .container-contacts img {
     width: 300px;
     height: 400px;
     object-fit: cover;
     border-radius: 5px;
 }
 
-.contatos-text {
+.contacts-text {
     font-size: 30px;
     background: -webkit-linear-gradient(#D1C4E9, #5b51ce);   
     -webkit-background-clip: text;
@@ -639,13 +640,20 @@ section .card-projetos .imageCard-projetos img {
     margin-top: 50px;
 }
 
-.contatos-paragh {
+.contacts-paragh {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.caixa {
+.container-texts {
+    position: absolute;
+    padding: 0 60px;
+    margin-top: 40px;
+    margin-right: 200px;
+}
+
+.border-box {
     width: 65px;
     height: 68px;
     display: flex;
@@ -656,7 +664,7 @@ section .card-projetos .imageCard-projetos img {
     transition: all 1s ease;
 }
 
-.caixa:hover {
+.border-box:hover {
     width: 160px;
     background: #0e76a8;
     border-radius: 35px;
@@ -664,26 +672,26 @@ section .card-projetos .imageCard-projetos img {
     box-shadow: 0 0 50px #258ad377;
 }
 
-.caixa:nth-child(2):hover {
+.border-box:nth-child(2):hover {
     background-color: #c32aa3;
     box-shadow: 0 0 50px #b315917c;
 }
 
-.caixa:nth-child(3):hover {
+.border-box:nth-child(3):hover {
     background-color: rgb(94, 34, 131);
     box-shadow: 0 0 50px #b315917c;
 }
 
-.caixa:nth-child(4):hover {
+.border-box:nth-child(4):hover {
     background-color: #C71610;
     box-shadow: 0 0 50px #b6211c;
 }
 
-.nav-contatos p {
+.nav-contacts p {
     transform: translate(60px);
 }
 
-.caixa .icon {
+.border-box .icon {
     position: absolute;
     top: 10px;
     width: 50px;
@@ -713,7 +721,85 @@ section .card-projetos .imageCard-projetos img {
     background-color: #C71610;
 }
 
-.caixa ion-icon {
+.border-box ion-icon {
     width: 30px;
     height: 30px;
+}
+
+footer {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Responsividade */
+
+/* Small desktops */
+@media (max-width: 1024px) {
+    .sidebar center {
+        display: none;
+    }
+
+    .sidebar {
+        padding-top: 110px;
+    }
+
+    .card {
+        height: 16.5rem;
+    }
+
+    .about__card {
+        width: 200px;
+        margin: 5px;
+    }
+
+    .about-me {
+        padding: 100px 110px 0 120px;
+    }
+
+    .about-me .container {
+        padding-right: 0;
+    }
+
+    .myStory .container-myStory {
+        padding: 70px 0;
+    }
+
+    .myStory .img-container   {
+        top: 90px;
+    }
+
+    .myStory .img-container img  {
+        height: 90%;
+        width: auto;
+    }
+
+    .service {
+        padding: 80px 150px;
+    }
+
+    section .container-card  {
+        max-width: 590px;
+        margin: 0 220px;
+    }
+
+    .arrow-left {
+        left: 20px;
+        transform: translateX(-55px);
+    }
+    
+    .arrow-right {
+        top: 0;
+        right: 5px;
+        transform: translateX(55px);
+        top: calc(50% - 25px);
+    }
+
+    .card-projects:first-child {
+        margin-left: 20px;
+    }
+    
+    .card-projects:last-child {
+        margin-right: 20px;
+    }
+    
 }
