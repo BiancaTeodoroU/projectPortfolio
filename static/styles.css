@@ -778,28 +778,28 @@ footer {
     }
 
     section .container-card  {
-        max-width: 590px;
-        margin: 0 220px;
+        max-width: 58%;
+        margin: 0 230px;
     }
 
     .arrow-left {
-        left: 20px;
+        left: 0;
         transform: translateX(-55px);
     }
     
     .arrow-right {
         top: 0;
-        right: 5px;
+        right: 0;
         transform: translateX(55px);
         top: calc(50% - 25px);
     }
 
     .card-projects:first-child {
-        margin-left: 20px;
+        margin-left: 0;
     }
     
     .card-projects:last-child {
-        margin-right: 20px;
+        margin-right: 0;
     }
     
 }
