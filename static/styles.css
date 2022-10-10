@@ -20,6 +20,7 @@
 
 body {
     background: var(--black-body);
+    overflow-x: hidden!important;
 }
 
 nav {
@@ -940,8 +941,8 @@ footer {
         width: 300px;
     }
 
-    body {
-        margin-bottom: calc(75px + 50px);
+    body,html {
+        overflow-x: hidden!important;
     }
 
     nav {
@@ -969,15 +970,18 @@ footer {
     .about__cards {
         display: flex;
         flex-direction: column;
-        margin-right: 60px;
     }
 
     .about__card {
-        width: 120px;
+        width: 125px;
+    }
+
+    .about__card-mid h5 {
+        width: unset;
     }
 
     .card {
-        height: 22rem;
+        height: 22.5rem;
     }
 
     .myStory .container-myStory {
@@ -1002,7 +1006,7 @@ footer {
     }
 
     .service {
-        padding: 20px 80px;
+        padding: 80px 80px;
     }
 
     .service .service-card {
@@ -1043,7 +1047,7 @@ footer {
     }
 
     .title {
-        padding: 40px 30px 0 30px;
+        padding: 90px 30px 0 30px;
     }
 
     .container-knowledge {
