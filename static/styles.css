@@ -933,7 +933,6 @@ footer {
     }
 }
 
-
 /* Celular */
 
 @media (max-width: 480px) {
@@ -969,7 +968,9 @@ footer {
 
     .about__cards {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+        align-items: center;
     }
 
     .about__card {
@@ -1001,12 +1002,12 @@ footer {
     }
 
     .myStory {
-        padding: 48px 70px 0;
+        padding: 40px 70px 0;
         margin-bottom: 120px;
     }
 
     .service {
-        padding: 80px 80px;
+        padding: 80px 105px;
     }
 
     .service .service-card {
@@ -1018,7 +1019,7 @@ footer {
     }
 
     section .container-card {
-        margin: 0 80px;
+        margin: 0 100px;
     }
 
     .card-projects {
@@ -1051,11 +1052,34 @@ footer {
     }
 
     .container-knowledge {
-        padding: 40px 100px;
+        padding: 0 80px 80px;
+    }
+
+    .box {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+    }
+
+    .box svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .box h2 {
+        font-size: 10px;
+    }
+
+    .box .content {
+        padding: 28px 10px;
+    }
+
+    .box .content p {
+        font-size: 4px;
     }
 
     .contacts .container-contacts img {
-        margin-left: 15px;
+        margin-left: 30px;
         width: 200px;
         height: 250px;
     }
@@ -1081,6 +1105,6 @@ footer {
     
     footer {
         font-size: 14px;
-        margin-left: 10px;
+        margin-left: 5px;
     }
 }
