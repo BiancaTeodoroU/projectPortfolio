@@ -957,8 +957,20 @@ footer {
         padding-left: 0.625rem;
     }
 
+    .about-me {
+        padding: 100px 110px 0 80px;
+    }
+
+    .card {
+        height: 19.5rem;
+    }
+
     .myStory .container-myStory {
-        width: 500px;
+        width: 300px;
+    }
+
+    .about-me .container p {
+        width: 300px;
     }
 
     .myStory .img-container {
@@ -966,23 +978,23 @@ footer {
     }
 
     .myStory .img-container img {
-        margin-left: 130px;
+        margin-left: 10px;
     }
 
     .service {
-        padding: 20px 170px;
+        padding: 20px 100px;
     }
 
     .service .service-card {
-        width: 400px;
+        width: 300px;
     }
 
     .service h1 {
-        padding: 30px 10px 20px 110px;
+        padding: 170px 10px 20px 50px;
     }
 
     section .container-card {
-        margin: 0 200px;
+        margin: 0 100px;
     }
 
     .card-projects {
@@ -1003,10 +1015,28 @@ footer {
     }
 
     .title-edit {
-        padding: 20px 30px 18px 272px;
+        padding: 140px 30px 0 45px;
     }
 
     .projects {
         display: block;
+    }
+
+    .title {
+        padding: 140px 30px 0 15px;
+    }
+
+    .container-knowledge {
+        padding: 40px 100px;
+    }
+
+    .contacts .container-contacts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contacts .container-contacts .content-contacts {
+        margin-left: 0;
+        margin-top: 20px;
     }
 }
