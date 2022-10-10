@@ -939,6 +939,10 @@ footer {
         width: 300px;
     }
 
+    body {
+        margin-bottom: calc(75px + 50px);
+    }
+
     nav {
         display: none;
     }
@@ -958,48 +962,63 @@ footer {
     }
 
     .about-me {
-        padding: 100px 110px 0 80px;
+        padding: 100px 110px 0 70px;
+    }
+
+    .about__cards {
+        display: flex;
+        flex-direction: column;
+        margin-right: 60px;
+    }
+
+    .about__card {
+        width: 120px;
     }
 
     .card {
-        height: 19.5rem;
+        height: 22rem;
     }
 
     .myStory .container-myStory {
-        width: 300px;
+        width: 270px;
     }
 
     .about-me .container p {
-        width: 300px;
+        width: 250px;
     }
 
     .myStory .img-container {
-        width: 100%;
+        width: 70%;
     }
 
     .myStory .img-container img {
         margin-left: 10px;
     }
 
+    .myStory {
+        padding: 48px 70px 0;
+        margin-bottom: 260px;
+    }
+
     .service {
-        padding: 20px 100px;
+        padding: 20px 80px;
     }
 
     .service .service-card {
-        width: 300px;
+        width: 250px;
     }
 
     .service h1 {
-        padding: 170px 10px 20px 50px;
+        padding: 170px 10px 20px 45px;
     }
 
     section .container-card {
-        margin: 0 100px;
+        margin: 0 80px;
     }
 
     .card-projects {
         margin: 30px 0;
-        width: 280px;
+        width: 250px;
     }
 
     .arrow-left {
@@ -1015,7 +1034,7 @@ footer {
     }
 
     .title-edit {
-        padding: 140px 30px 0 45px;
+        padding: 190px 30px 0 45px;
     }
 
     .projects {
@@ -1023,11 +1042,16 @@ footer {
     }
 
     .title {
-        padding: 140px 30px 0 15px;
+        padding: 200px 30px 0 70px;
     }
 
     .container-knowledge {
         padding: 40px 100px;
+    }
+
+    .contacts .container-contacts img {
+        width: 200px;
+        height: 250px;
     }
 
     .contacts .container-contacts {
@@ -1038,5 +1062,19 @@ footer {
     .contacts .container-contacts .content-contacts {
         margin-left: 0;
         margin-top: 20px;
+    }
+
+    .nav-contacts {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .ajust-conhecimentos {
+        padding: 30px 80px;
+    }
+    
+    footer {
+        font-size: 14px;
+        margin-left: 40px;
     }
 }
