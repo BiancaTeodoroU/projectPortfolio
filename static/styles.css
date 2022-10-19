@@ -380,7 +380,7 @@ section .container-card {
     position: absolute;
     scroll-behavior: smooth;
     top: calc(50% - 25px);
-    z-index: 800;
+    z-index: 95;
 }
 
 .arrow svg {
