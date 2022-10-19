@@ -732,7 +732,110 @@ footer {
     margin-bottom: 30px;
 }
 
+.ajust-in-sidebar {
+    display: block;
+    text-align: center;
+}
+
 /* Responsividade */
+
+@media (max-width: 1920px) {
+    .card {
+        height: 10.8rem;
+    }
+
+    .contacts {
+        padding: 0 500px;
+    }
+
+    .border-box {
+        padding: 8px;
+    }
+
+    .contacts .container-contacts .content-contacts {
+        margin-left: 90px;
+        width: 500px;
+    }
+
+    section .container-card {
+        max-width: 1478px;
+    }
+
+    .container-knowledge {
+        padding: 40px 180px;
+    }
+
+    .myStory {
+        padding: 48px 160px 0;
+    }
+
+    .myStory .container-myStory {
+        padding: 70px 130px 0;
+    }
+
+    .myStory .img-container {
+        width: 36%;
+        top: 20px;
+    }
+
+    .service .services-container {
+        max-width: 800px;
+    }
+
+    .service-card + .service-card {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 1366px) {
+    .myStory .container-myStory {
+        padding: 70px 10px 0;        
+    } 
+
+    .myStory .img-container {
+        width: 80%;
+        top: 40px;
+    }
+
+    section .container-card {
+        max-width: 866px;   
+    }
+    .contacts {
+        padding: 0 150px;
+    }
+
+    .card {
+        height: 15.8rem;
+    }
+}
+
+@media (max-width: 1240px) {
+    .service-card + .service-card {
+        margin-left: 30px;
+    }
+
+    .card {
+        height: 15.8rem;
+    }
+
+    .contacts {
+        padding: 0 100px;
+    }
+    
+    .myStory {
+        padding: 48px 100px 0;
+    }
+
+    .myStory .img-container {
+        width: 69%;
+        top: 40px;
+    }
+
+    .myStory .container-myStory {
+        padding: 70px 35px 0;
+    }
+
+}
 
 /* Small desktops */
 @media (max-width: 1024px) {
@@ -944,6 +1047,14 @@ footer {
         overflow-x: hidden!important;
     }
 
+    .ajust-in-sidebar {
+        display: none;
+    }
+
+    .contacts .container-contacts {
+        padding: 0 35px;
+    }
+
     nav {
         display: none;
     }
@@ -1092,6 +1203,7 @@ footer {
     .contacts .container-contacts .content-contacts {
         margin-left: 0;
         margin-top: 20px;
+        width: 250px;
     }
 
     .nav-contacts {
