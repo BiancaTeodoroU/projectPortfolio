@@ -10,7 +10,7 @@
 :root {
     --pink-dark: #ff4a836b;
     --first-color: #ef32d9;
-    --title-pink: #ff266a;
+    --title-pink: #fd3675;
     --second-color: #89fffd;
     --size: 100px;
     --speed: 4s;
@@ -23,12 +23,21 @@ body {
     overflow-x: hidden!important;
 }
 
+.body {
+    padding-left: 65px;
+    padding-top: 80px;
+}
+
 nav {
     position: fixed;
-    background: var(--black-nav);
-    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    padding: 0 100px;
     width: 100%;
-    height: 4rem;
+    height: 100%;
+    top: 0;
+    background: var(--black-nav);
+    height: 60px;
 
     z-index: 99;
 }
@@ -37,47 +46,24 @@ html {
     scroll-behavior: smooth;
 }
 
-.jt-cot_str {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.jt-cot_ctr {
-    display: flex;
-    justify-content: center;
-}
-
 .ovfl-hdd {
     overflow: hidden;
+}
+
+.font-size__title {
+    font-size: calc(18px + .3vw)!important;
 }
 
 .ps-rl {
     position: relative;
 }
 
-.hamburger-menu_left {
-    text-align: start;
-    margin: 0 80px;
-}
-
-.hamburger-menu_left h3 {
-    color: white;
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    font-weight: 800;
-}
-
-.hamburger-menu_left span {
-    color: var(--title-pink);
-}
-
 .sidebar {
     position: fixed;
     width: 15.625rem;
+    margin-top: 60px;
+    padding-top: 10px;
     height: 100%;
-    margin-top: 4rem;
-    padding-top: 1rem;
     left: 0;
     background: var(--black-body);
     border-right: 1px solid #28293D;
@@ -85,6 +71,18 @@ html {
     transition-property: left;
 
     z-index: 900;
+}
+
+.nav__title__color h3 {
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.nav__title__color span {
+    color: var(--title-pink);
 }
 
 .sidebar .sidebar_image {
@@ -177,6 +175,8 @@ h1 {
 }
 
 .title-purple {
+    color: var(--title-pink);
+    margin-bottom: 30px;
     font-weight: 800;
 }
 
@@ -185,7 +185,7 @@ h1, h2 {
     font-weight: 500;
 }
 
-.title-myStory {
+.title {
     color: #fd3675;
     margin-bottom: 20px;
 }
@@ -195,13 +195,17 @@ p {
     color: white;
 }
 
-.card {
+.straight {
     border: none;
     position: absolute;
+    top: 70px;
+    left: 0;
     width: 3px;
-    padding: 1px;
-    height: 15.8rem;
     background: #8a4a88;
+}
+
+.ajust-in-line {
+    height: 58%;
 }
 
 .u-m-20 {
@@ -212,38 +216,13 @@ p {
     margin: 0 10px;
 }
 
-.about-me {
-    display: flex;
-    padding: 140px 110px 0 120px;
-}
-
-.about-me .container h1 {
-    margin-bottom: 20px;
-}
-
-.myStory::before {
-    max-width: 100%;
-}
-
-.myStory {
-    display: flex;
-    height: 580px;
-    padding: 48px 100px 0;
-}
-
-.myStory .container-myStory {
-    width: 50%;
-    padding: 70px 35px 0;
-}
-
 .myStory .img-container  {
-    width: 60%;
     text-align: center;
     top: 40px;
 }
 
 .myStory .img-container img {
-    width: 60%;
+    width: 50%;
     max-width: 100%;
     min-width: 60%;
     height: 100%;
@@ -260,18 +239,8 @@ p {
     object-fit: cover;
 }
 
-.about-me .container h2 {
+.about-me h2 {
     color: #6b9aff;
-}
-
-.about-me .container {
-    width: 50%;
-    padding-right: 50px;
-}
-
-.about__cards {
-    align-items: center;
-    margin-top: 15px;
 }
 
 .about__card {
@@ -280,9 +249,11 @@ p {
     border-radius: 1rem;
     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
     cursor: default;
-    width: 120px;
-    height: 90px;
-    margin: 10px;
+    height: 105px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 0.5rem 0;
     font-size: 14px;
     text-align: center;
@@ -298,17 +269,10 @@ p {
 .about__card h5 {
     color: #d8bfd8;
     margin: 0 10px;
+    font-size: 12px;
 }
 
-.service {
-    height: 520px;
-    text-align: center;
-    padding: 80px 350px;
-    margin-bottom: 38px;
-}
-
-.service h1 {
-    padding: 30px 10px 20px 10px;
+.service h2 {
     font-weight: 800;
 }
 
@@ -318,27 +282,17 @@ p {
     margin-bottom: 15px;
 }
 
-.service .services-container {
-    display: flex;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 60px auto 0;
-    margin-top: 50px;
-}
-
-.service h2 {
+.service h3 {
     font-weight: 700;
     margin-bottom: 10px;
     color: #9d98ff;   
 }
 
-.service .services-container .service-card {
-    max-width: 360px;
+.service .service-card {
     background: #2f303438;
     border: 1px solid #5344ff;
     border-radius: 5px;
     box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.185) -6px -2px 16px 0px;
-    padding: 30px 25px;
 
     display: flex;
     text-align: left;
@@ -347,33 +301,20 @@ p {
     text-align: center;
 }
 
-.service .services-container .service-card ion-icon {
+.service .service-card ion-icon {
     margin-bottom: 40px;
     height: 50px;
     width: 90px;
     color: white;
 }
 
-.service-card + .service-card {
-    margin-left: 70px;
-}
-
-.title {
-    padding: 70px 30px 18px 20px;
-    margin-bottom: 5px;
-    font-weight: 600;
-    text-align: center;
+.projects {
+    display: flex;
+    scroll-behavior: smooth;
 }
 
 section .container-card {
     position: relative;
-    max-width: 866px;
-    margin: 0 195px;
-}
-
-.projects {
-    display: flex;
-    scroll-behavior: smooth;
 }
 
 .arrow {
@@ -530,21 +471,12 @@ section .card-projects .imageCard-projects img {
     cursor: pointer;
 }
 
-.container-knowledge {
-    padding: 40px 140px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-around;
-    align-items: center;
-}
-
 .box {
-    width: 230px;
     height: 250px;
     border: 1px solid hsl(245, 75%, 52%);
     border-radius: 10px;
     padding: 20px;
-    margin: 10px;
+    margin-top: 20px;
 }
 
 .box h2 {
@@ -568,7 +500,7 @@ section .card-projects .imageCard-projects img {
 .box:hover svg {
     position: absolute;
     top: 70%;
-    left: 40%;
+    left: 30%;
     width: 30px;
     height: 30px;
     font-size: 3rem;
@@ -601,34 +533,10 @@ section .card-projects .imageCard-projects img {
 }
 
 .box .content p {
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 500;
     color: #fff;
     letter-spacing: 1px;
-}
-
-.contacts {
-    padding: 0 150px;
-    text-align: center;
-}
-
-.contacts .container-contacts {
-    display: flex;
-    margin: 50px 90px;
-    max-width: 1400px;
-}
-
-.contacts .container-contacts .content-contacts {
-    margin-top: 40px;
-    margin-left: 20px;
-    text-align: left;
-}
-
-.contacts .container-contacts img {
-    width: 300px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 5px;
 }
 
 .contacts-text {
@@ -654,6 +562,14 @@ section .card-projects .imageCard-projects img {
     margin-right: 200px;
 }
 
+.nav-contacts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .border-box {
     width: 65px;
     height: 68px;
@@ -665,7 +581,7 @@ section .card-projects .imageCard-projects img {
     transition: all 1s ease;
 }
 
-.border-box:hover {
+.border-box-linkedin:hover {
     width: 160px;
     background: #0e76a8;
     border-radius: 35px;
@@ -673,22 +589,32 @@ section .card-projects .imageCard-projects img {
     box-shadow: 0 0 50px #258ad377;
 }
 
-.border-box:nth-child(2):hover {
+.border-box-instagram:hover {
+    width: 160px;
+    border-radius: 35px;
+    color: #fff;
     background-color: #c32aa3;
     box-shadow: 0 0 50px #b315917c;
 }
 
-.border-box:nth-child(3):hover {
+.border-box-github:hover {
+    width: 160px;
+    border-radius: 35px;
+    color: #fff;
     background-color: rgb(94, 34, 131);
     box-shadow: 0 0 50px #b315917c;
 }
 
-.border-box:nth-child(4):hover {
+.border-box-email:hover {
+    width: 160px;
+    border-radius: 35px;
+    color: #fff;
     background-color: #C71610;
     box-shadow: 0 0 50px #b6211c;
 }
 
 .nav-contacts p {
+    margin-bottom: 0;
     transform: translate(60px);
 }
 
@@ -728,7 +654,6 @@ section .card-projects .imageCard-projects img {
 }
 
 footer {
-    text-align: center;
     margin-bottom: 30px;
 }
 
@@ -738,404 +663,80 @@ footer {
 }
 
 /* Responsividade */
-
-@media (max-width: 1920px) {
-    .card {
-        height: 10.8rem;
-    }
-
-    .contacts {
-        padding: 0 500px;
-    }
-
-    .border-box {
-        padding: 8px;
-    }
-
-    .contacts .container-contacts .content-contacts {
-        margin-left: 90px;
-        width: 500px;
-    }
-
-    section .container-card {
-        max-width: 1478px;
-    }
-
-    .container-knowledge {
-        padding: 40px 180px;
-    }
-
-    .myStory {
-        padding: 48px 160px 0;
-    }
-
-    .myStory .container-myStory {
-        padding: 70px 130px 0;
-    }
-
-    .myStory .img-container {
-        width: 36%;
-        top: 20px;
-    }
-
-    .service .services-container {
-        max-width: 800px;
-    }
-
-    .service-card + .service-card {
-        margin-left: 30px;
+@media (max-width: 3000px) {
+    .container-card {
+        max-width: 1178px;
+        margin: 0 650px;
     }
 }
 
-@media (max-width: 1366px) {
-    .myStory .container-myStory {
-        padding: 70px 10px 0;        
-    } 
-
-    .myStory .img-container {
-        width: 80%;
-        top: 40px;
-    }
-
-    section .container-card {
-        max-width: 866px;   
-    }
-    .contacts {
-        padding: 0 150px;
-    }
-
-    .card {
-        height: 15.8rem;
+@media (max-width: 1400px) {
+    .container-card {
+        max-width: 866px;
+        margin: 0 150px;
     }
 }
 
-@media (max-width: 1240px) {
-    .service-card + .service-card {
-        margin-left: 30px;
-    }
-
-    .card {
-        height: 15.8rem;
-    }
-
-    .contacts {
-        padding: 0 100px;
-    }
-    
-    .myStory {
-        padding: 48px 100px 0;
-    }
-
-    .myStory .img-container {
-        width: 69%;
-        top: 40px;
-    }
-
-    .myStory .container-myStory {
-        padding: 70px 35px 0;
-    }
-
-}
-
-/* Small desktops */
-@media (max-width: 1024px) {
-
-    .sidebar center {
-        display: none;
-    }
-
-    .sidebar {
-        height: 1000px;
-        padding-top: 110px;
-    }
-
-    .card {
-        height: 14.5rem;
-    }
-
-    .about__card {
-        width: 200px;
-        margin: 5px;
-    }
-
-    .about-me {
-        padding: 130px 110px 0 120px;
-    }
-
-    .about-me .container {
-        padding-right: 0;
-    }
-
-    .about-me .container p {
-        width: 500px;
-    }
-
-    .myStory .container-myStory {
-        padding: 70px 0;
-    }
-
-    .myStory .img-container   {
-        top: 90px;
-    }
-
-    .myStory .img-container img  {
-        height: 90%;
-        width: auto;
-    }
-
-    .service {
-        padding: 50px 150px;
-        margin-bottom: 40px;
-        margin-top: 50px;
-    }
-
-    section .container-card  {
-        max-width: 58%;
-        margin: 0 230px;
-    }
-
-    .arrow-left {
-        left: 0;
-        transform: translateX(-55px);
-    }
-    
-    .arrow-right {
-        top: 0;
-        right: 0;
-        transform: translateX(55px);
-        top: calc(50% - 25px);
-    }
-
-    .card-projects:first-child {
-        margin-left: 0;
-    }
-    
-    .card-projects:last-child {
-        margin-right: 0;
-    }
-    
-    .container-knowledge {
-        padding: 40px 130px;
-    }
-
-    .contacts {
-        padding: 20px;
-    }
-
-    .title {
-        padding: 80px 30px 18px 20px;
-    }
-
-    .title-edit {
-        padding: 10px 30px 18px 20px;
+@media (max-width: 1200px) {
+    .container-card {
+        max-width: 866px;
+        margin: 0 140px;
     }
 }
 
-/* Tablet */
-@media (max-width: 767px) {
-    nav {
-        height: 3rem;
-        padding: 15px;
+@media (max-width: 992px) {
+    .container-card {
+        max-width: 960px;
     }
+}
 
-    label #sidebar_btn {
-        font-size: 25px;
-    }
-
-    .hamburger-menu_left h3 {
-        font-size: 18px;
-    }
-
-    .sidebar {
-        margin-top: 49px;
-    }
-
-    .about-me {
-        padding: 100px 110px 0 120px;
-    }
-
-    .about-me .container p {
-        width: 400px;
-    }
-
-    .about__card {
-        width: 300px;
-        margin: 10px;
-    }
-
-    .about__card-mid h5 {
-        text-align: center;
-        width: 80px;
-    }
-
-    .card {
-        height: 15.5rem;
-    }
-
-    .myStory .container-myStory {
-        width: 90%;
-        padding: 50px 0;
-    }
-
-    .myStory .img-container {
-        top: 0;
-    }
-
-    .myStory .img-container img {
-        margin-left: 150px;
-    }
-
-    .myStory {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 360px;
-    }
-
-    .myStory .container-myStory p {
-        text-align: start;
-    }
-
-    .service {
-        margin-bottom: 300px;
-        padding: 50px 230px;
-    }
-
-    .service .services-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .service-card + .service-card {
-        margin-top: 50px;
-        margin-left: 0;
-    }
-
-    .title-edit {
-        padding: 20px 30px 18px 20px;
-    }
-
-    section .container-card {
+@media (max-width: 768px) {
+    .container-card {
         max-width: 262px;
-        margin: 0 245px;
+        margin: 0 210px;
     }
-
-    .arrow-left {
-        left: 0;
-        transform: translateX(-55px);
-    }
-
-    .arrow-right {
-        top: 0;
-        right: 0;
-        transform: translateX(55px);
-        top: calc(50% - 25px);
-    }
-
-    .contacts {
-        padding: 0;
+    .straight {
+        height: 40%;
     }
 }
-
-/* Celular */
 
 @media (max-width: 480px) {
-    .about-me .container {
-        width: 300px;
-    }
-
-    body,html {
-        overflow-x: hidden!important;
+    nav {
+        padding: 0 30px;
     }
 
     .ajust-in-sidebar {
         display: none;
     }
 
-    .contacts .container-contacts {
-        padding: 0 35px;
-    }
-
-    nav {
-        display: none;
-    }
-
     .sidebar {
         width: 3rem;
-        height: 2000px;
-        margin-top: 0;
-    }
-
-    .sidebar a span {
-        display: none;
+        padding-top: 150px;
     }
 
     .sidebar a {
         padding-left: 0.625rem;
     }
 
-    .about-me {
-        padding: 100px 110px 0 70px;
-    }
-
-    .about__cards {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-around;
-        align-items: center;
-    }
-
-    .about__card {
-        width: 125px;
-    }
-
-    .about__card-mid h5 {
-        width: unset;
-    }
-
-    .card {
-        height: 21.8rem;
-    }
-
-    .myStory .container-myStory {
-        width: 270px;
-    }
-
-    .about-me .container p {
-        width: 250px;
-    }
-
-    .myStory .img-container {
-        width: 70%;
-    }
-
-    .myStory .img-container img {
+    .sidebar a span {
         display: none;
     }
 
-    .myStory {
-        padding: 40px 70px 0;
-        margin-bottom: 120px;
+    label #sidebar_btn {
+        display: none;
     }
-
-    .service {
-        padding: 80px 105px;
-    }
-
-    .service .service-card {
-        width: 250px;
-    }
-
-    .service h1 {
-        padding: 0 10px 20px 15px;
+    
+    .straight {
+        height: 50%;
     }
 
     section .container-card {
-        margin: 0 100px;
+        margin: 0 20px;
     }
 
     .card-projects {
-        margin: 30px 0;
-        width: 250px;
+        margin: 10px 0;
+        width: 230px;
     }
 
     .arrow-left {
@@ -1146,77 +747,7 @@ footer {
         display: none;
     }
 
-    section .projects {
-        width: 800px;
-    }
-
-    .title-edit {
-        padding: 190px 30px 0 45px;
-    }
-
     .projects {
-        display: block;
-    }
-
-    .title {
-        padding: 90px 30px 0 30px;
-    }
-
-    .container-knowledge {
-        padding: 0 80px 80px;
-    }
-
-    .box {
-        width: 100px;
-        height: 100px;
-        padding: 10px;
-    }
-
-    .box svg {
-        width: 50px;
-        height: 50px;
-    }
-
-    .box h2 {
-        font-size: 10px;
-    }
-
-    .box .content {
-        padding: 28px 10px;
-    }
-
-    .box .content p {
-        font-size: 4px;
-    }
-
-    .contacts .container-contacts img {
-        margin-left: 20px;
-        width: 200px;
-        height: 250px;
-    }
-
-    .contacts .container-contacts {
-        display: flex;
         flex-direction: column;
-    }
-
-    .contacts .container-contacts .content-contacts {
-        margin-left: 0;
-        margin-top: 20px;
-        width: 250px;
-    }
-
-    .nav-contacts {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .ajust-conhecimentos {
-        padding: 30px 80px;
-    }
-    
-    footer {
-        font-size: 14px;
-        margin-left: 5px;
     }
 }
