@@ -533,7 +533,7 @@ section .card-projects .imageCard-projects img {
 }
 
 .box .content p {
-    font-size: 9px;
+    font-size: 10px;
     font-weight: 500;
     color: #fff;
     letter-spacing: 1px;
@@ -730,8 +730,12 @@ footer {
         height: 50%;
     }
 
+    .box .content p {
+        font-size: 9px;
+    }
+
     section .container-card {
-        margin: 0 20px;
+        margin: 0 30px;
     }
 
     .card-projects {
