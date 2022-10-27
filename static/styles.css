@@ -311,7 +311,6 @@ p {
 .projects {
     display: flex;
     scroll-behavior: smooth;
-    justify-content: center;
 }
 
 section .container-card {
@@ -675,6 +674,10 @@ footer {
     .container-card {
         max-width: 866px;
         margin: 0 150px;
+    }
+
+    .projects {
+        justify-content: none;
     }
 }
 
