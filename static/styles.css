@@ -311,6 +311,7 @@ p {
 .projects {
     display: flex;
     scroll-behavior: smooth;
+    justify-content: center;
 }
 
 section .container-card {
