@@ -519,7 +519,7 @@ section .card-projects .imageCard-projects img {
     top: 0;
     left: -100%;
     transition: .5s ease-in-out;
-    padding: 65px 20px;
+    padding: 52px 20px;
 }
 
 .box .content::after {
@@ -537,7 +537,7 @@ section .card-projects .imageCard-projects img {
 }
 
 .box .content p {
-    font-size: 3px;
+    font-size: 10px;
     font-weight: 500;
     color: #fff;
     letter-spacing: 1px;
