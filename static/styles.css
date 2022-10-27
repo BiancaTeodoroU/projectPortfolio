@@ -348,6 +348,10 @@ section .container-card {
     top: calc(50% - 25px);
 }
 
+.fs-9 {
+    font-size: 6px;
+}
+
 section .card-projects .imageCard-projects {
     width: 200px;
     height: 120px;
@@ -515,7 +519,7 @@ section .card-projects .imageCard-projects img {
     top: 0;
     left: -100%;
     transition: .5s ease-in-out;
-    padding: 70px 20px;
+    padding: 65px 20px;
 }
 
 .box .content::after {
@@ -533,7 +537,7 @@ section .card-projects .imageCard-projects img {
 }
 
 .box .content p {
-    font-size: 10px;
+    font-size: 3px;
     font-weight: 500;
     color: #fff;
     letter-spacing: 1px;
