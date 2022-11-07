@@ -129,7 +129,7 @@ ul {
     padding-right: 0.625rem;
     color: #6842FF;
     font-size: 1.3rem;
-    width: 4rem;
+    width: 3.8rem;
     vertical-align: sub;
 }
 
@@ -158,119 +158,7 @@ ul {
 .nav__title__color span {
     color: var(--title-pink);
 }
-/*
 
-.sidebar {
-    position: fixed;
-    width: 15.625rem;
-    margin-top: 60px;
-    padding-top: 10px;
-    height: 100%;
-    left: 0;
-    background: var(--black-body);
-    border-right: 1px solid #28293D;
-    transition: 0.5s;
-    transition-property: left;
-
-    z-index: 900;
-}
-
-.nav__title__color h3 {
-    color: white;
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    font-weight: 800;
-}
-
-.nav__title__color span {
-    color: var(--title-pink);
-}
-
-.sidebar .sidebar_image {
-    width: 50%;
-    height: 5%;
-    max-width: 100%;
-    min-width: 50%;
-    object-fit: cover;
-    -moz-transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
-    border-radius: 40%;
-}
-
-.sidebar .sidebar_image:hover {
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-    object-fit: cover;
-}
-
-.sidebar h2 {
-    color: var(--title-pink);
-    margin-top: 10px;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.sidebar a {
-    color: #6842FF;
-    display: block;
-    width: 100%;
-    line-height: 3.2rem;
-    text-decoration: none;
-    padding-left: 2.2rem;
-    box-sizing: border-box;
-    transition: 0.5s;
-    transition-property: background;
-    font-weight: 500;
-}
-
-.sidebar a:hover {
-    background: white;
-}
-
-.sidebar ion-icon {
-    padding-right: 0.625rem;
-    color: #6842FF;
-    font-size: 1.3rem; 
-    width: 2rem;
-    vertical-align: sub;
-}
-
-label #sidebar_btn {
-    z-index: 1;
-    position: fixed;
-    left: 2rem;
-    color: #6842FF;
-    font-size: 1.563rem;
-    cursor: pointer;
-    transition: 0.5s;
-    transition-property: color;
-}
-
-label #sidebar_btn:hover {
-    color: #ba55d3;
-}
-
-#check:checked ~ .sidebar {
-    left: -11.875rem;
-}
-
-#check:checked ~ .sidebar a span {
-    display: none;
-}
-
-#check:checked ~ .sidebar a {
-    font-size: 1.25rem;
-    margin-left: 10.625rem;
-    width: 5rem;
-}
-
-#check {
-    display: none;
-}
-*/
 h1 {
     font-size: 34px;
     color: #fd3675;
@@ -307,7 +195,7 @@ p {
 }
 
 .ajust-in-line {
-    height: 58%;
+    height: 53%;
 }
 
 .u-m-20 {
@@ -370,7 +258,7 @@ p {
 
 .about__card h5 {
     color: #d8bfd8;
-    margin: 0 10px;
+    margin: 5px 10px;
     font-size: 12px;
 }
 
