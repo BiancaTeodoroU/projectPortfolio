@@ -659,7 +659,7 @@ footer {
 /* Responsividade */
 @media (max-width: 3000px) {
     .container-card {
-        max-width: 1178px;
+        max-width: 870px;
         margin: 0 650px;
     }
 }
