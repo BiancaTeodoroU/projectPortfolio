@@ -1,0 +1,133 @@
+/* Responsividade */
+@media (max-width: 3000px) {
+    .container-card {
+        max-width: 870px;
+        margin: 0 650px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .container-card {
+        max-width: 866px;
+        margin: 0 150px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container-card {
+        max-width: 570px;
+        margin: 0 140px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container-card {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-card {
+        max-width: 262px;
+        margin: 0 100px;
+    }
+    .straight {
+        height: 40%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 0 30px;
+    }
+
+    .menu:hover, section.menu.expanded {
+        width: 60px;
+        overflow: hidden;
+    }
+
+    .span-menu { 
+        display: none;
+    }
+
+    .straight {
+        height: 50%;
+    }
+
+    .box .content p {
+        font-size: 9px;
+    }
+
+    section .container-card {
+        margin: 0 25px;
+    }
+
+    .card-projects {
+        margin: 10px 0;
+        width: 230px;
+    }
+
+    .arrow-left {
+        display: none;
+    }
+
+    .arrow-right {
+        display: none;
+    }
+
+    .projects {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .container-qualification {
+        margin-left: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
+    .qualification__data {
+        gap: .5rem;
+        margin-top: 40px;
+    }
+
+
+}
+
+@media screen and (min-width:568px) {
+    .qualification__sections {
+        display: grid;
+        grid-template-columns: .6fr;
+        justify-content: center;
+    }
+
+    .qualification__data {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .container-qualification {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-qualification {
+        padding: 6rem 0 2rem;
+    }
+
+    .qualification__tabs {
+        justify-content: center;
+    }
+
+    .qualification__button {
+        margin: 0 var(--mb-1);
+    }
+
+    .qualification__sections {
+        grid-template-columns: .5fr;
+    }
+
+    .qualification__data {
+        margin: 0;
+    }
+}

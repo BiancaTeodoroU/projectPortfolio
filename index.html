@@ -11,6 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./static/styles.css">
+    <link rel="stylesheet" href="./mediaquery.css">
     <title>Portfolio Bianca</title>
 </head>
 <body>
@@ -501,6 +502,106 @@
                 </div>
             </div>
         </section>
+        <section class="qualification section-qualification">
+            <h2 class="title-purple text-center m-0">Qualification</h2>
+            <span style="color: var(--first-color);" class="section__subtitle">My personal journey</span>
+
+            <div class="qualification__container container-qualification">
+                <div class="qualification__tabs">
+                    <div class="qualification__button button--flex qualification__active" data-target='#education'>
+                        <img src="./images/school.png" alt="" class="qualification__icon" width="35px" height="40px">
+                        Education
+                    </div>
+                    <div class="qualification__button button--flex" data-target="#work">
+                        <img src="./images/mala.png" alt="" class="qualification__icon" width="25px" height="30px">
+                        Work
+                    </div>
+                </div>
+                <div class="qualification__sections">
+                    <div class="qualification__content qualification__active" data-content id="education">
+                        <div class="qualification__data">
+                            <div>
+                            <h3 class="qualification__title">E M Professora Alayde Tortorella de Faria Motta</h3>
+                                <span class="qualification__subtitle">Escola Fundamental</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    2009 - 2013
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Clotilde Veiga De Barros</h3>
+                                    <span class="qualification__subtitle">Escola</span>
+                                    <div class="qualification__calendar">
+                                        <i class="fa-solid fa-calendar-days"></i>
+                                        2014 - 2020
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Analise e desenvolvimento de sistemas</h3>
+                                <span class="qualification__subtitle">Toledo - Universidade</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    2021 - 2023
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="qualification__content" data-content id="work">
+                        <div class="qualification__data">
+                            <div>
+                                <h3 class="qualification__title">Jovem Aprendiz Auxiliar de Escritório em Geral</h3>
+                                <span class="qualification__subtitle">Security Segurança - Trabalho</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    fev 2021 - abr 2023
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title">Estágiaria em Engenharia de Software</h3>
+                                <span class="qualification__subtitle">Foregon - Trabalho</span>
+                                <div class="qualification__calendar">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    abr de 2022 - o momento
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="contacts" class="contacts mt-5 py-4">
             <div class="container">
             <h2 class="title-purple text-center">Contatos</h2>
@@ -515,38 +616,24 @@
                 </div>
                 <div class="nav-contacts">
                     <div class="row justify-content-center">
-                        <div class="col-3 col-md-3">
-                            <div class="border-box border-box-linkedin ps-rl ovfl-hdd">
-                                <div onclick="window.open('https://www.linkedin.com/in/bianca-teodoro-urtado-ba37a1215/')" class="icon linkedin">
-                                    <ion-icon name="logo-linkedin"></ion-icon>
-                                </div>
-                                <p>Linkedin</p>
-                            </div>
-                        </div>
-                        <div class="col-3 col-md-3">
-                            <div class="border-box border-box-instagram ps-rl ovfl-hdd">
-                                <div onclick="window.open('https://www.instagram.com/biancateodorou/')" class="icon instagram">
-                                    <ion-icon name="logo-instagram"></ion-icon>
-                                </div>
-                                <p>Instagram</p>
-                            </div>
-                        </div>
-                        <div class="col-4 col-md-3">
-                            <div class="border-box border-box-github ps-rl ovfl-hdd">
-                                <div onclick="window.open('https://github.com/BiancaTeodoroU')" class="icon github">
-                                    <ion-icon name="logo-github"></ion-icon>
-                                </div>
-                                <p>Github</p>
-                            </div>
-                        </div>
-                        <div class="col-4 col-md-3">
-                            <div class="border-box border-box-email ps-rl ovfl-hdd">
-                                <div onclick="window.open('mailto:biancaurtado645@gmail.com')" class="icon email">
-                                    <ion-icon name="mail-outline"></ion-icon>
-                                </div>
-                                <p class="text-center">Gmail</p>
-                            </div>
-                        </div>
+                        <ul class="contact">
+                            <li style="--i:#0e76a8;--j:#258ad377;">
+                                <span class="icon"><i class="fa fa-linkedin"></i></span>
+                                <span onclick="window.open('https://www.linkedin.com/in/bianca-teodoro-urtado-ba37a1215/')" class="titulo">linkedin</span>
+                            </li>
+                            <li style="--i:#c32aa3;--j:#b315917c;">
+                                <span class="icon"><i class="fa fa-instagram"></i></span>
+                                <span onclick="window.open('https://www.instagram.com/biancateodorou/')" class="titulo">instagram</span>
+                            </li>
+                            <li style="--i:rgb(94, 34, 131);--j:#b315917c;">
+                                <span class="icon"><i class="fa fa-github"></i></span>
+                                <span onclick="window.open('https://github.com/BiancaTeodoroU')" class="titulo">github</span>
+                            </li>
+                            <li style="--i:#C71610;--j:#b6211c;">
+                                <span class="icon"><i class="fa fa-envelope"></i></span>
+                                <span onclick="window.open('mailto:biancaurtado645@gmail.com')" class="titulo">Gmail</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
