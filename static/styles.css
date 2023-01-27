@@ -835,9 +835,9 @@ section .card-projects .imageCard-projects img {
 }
 
 .contact {
-    position: relative;
     display: flex;
-    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .contact li {
@@ -850,6 +850,7 @@ section .card-projects .imageCard-projects img {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     transition: 0.5s;
 }
@@ -871,6 +872,7 @@ section .card-projects .imageCard-projects img {
 
 .contact li:hover::before {
     opacity: 1;
+    z-index: -1;
 }
 
 .contact li::after {
@@ -883,7 +885,6 @@ section .card-projects .imageCard-projects img {
     background: linear-gradient(45deg, var(--i), var(--j));
     opacity: 0;
     transition: 0.5s;
-    z-index: -1;
     filter: blur(15px);
 }
 
