@@ -101,11 +101,15 @@
     }
 }
 
-@media screen and (min-width:568px) {
+@media screen and (min-width:569px) {
     .qualification__sections {
         display: grid;
         grid-template-columns: .6fr;
         justify-content: center;
+    }
+
+    .menu-mobile {
+        display: none;
     }
 }
 
