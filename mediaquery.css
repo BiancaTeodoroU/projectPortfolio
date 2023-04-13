@@ -59,7 +59,7 @@
     }
 
     section .container-card {
-        margin: 0 25px;
+        margin: 0 auto;
     }
 
     .card-projects {
