@@ -925,7 +925,10 @@ section .card-projects .imageCard-projects img {
 }
 
 
-
+.content-projects {
+    display: flex;
+    justify-content: center;
+}
 
 
 footer {
