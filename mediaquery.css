@@ -78,6 +78,13 @@
     .projects {
         flex-direction: column;
     }
+
+    .qualification__data {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (max-width:350px) {
@@ -86,11 +93,12 @@
         margin-right: var(--mb-1);
     }
     .qualification__data {
-        gap: .5rem;
         margin-top: 40px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
-
 }
 
 @media screen and (min-width:568px) {
@@ -99,9 +107,16 @@
         grid-template-columns: .6fr;
         justify-content: center;
     }
+}
 
+
+@media screen and (max-width:568px) {
     .qualification__data {
         margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
     }
 }
 
