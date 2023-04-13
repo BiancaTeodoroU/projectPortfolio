@@ -661,6 +661,10 @@ section .card-projects .imageCard-projects img {
     text-align: center;
 }
 
+.ml-16 {
+    margin: 0 16px;
+}
+
 .border-box {
     width: 65px;
     height: 68px;
@@ -820,6 +824,10 @@ section .card-projects .imageCard-projects img {
     height: 100%;
     background-color: var(--first-color);
     transform: translate(6px, -7px);
+}
+
+.ml-10 {
+    margin: 0 10px;
 }
 
 .qualification [data-content] {

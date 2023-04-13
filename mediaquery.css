@@ -119,6 +119,69 @@
 }
 
 @media screen and (max-width:568px) {
+    .menu {
+        display: none;
+    }
+    
+    .above {
+        padding: 0 20px;
+    }
+
+    .section-qualification {
+        padding: 3rem 0 0;
+    }
+
+    .title-purple {
+        margin-bottom: 0;
+    }
+
+    .contacts-text {
+        margin-top: 25px;
+    }
+
+    .body {
+        padding-left: 0;
+    }
+
+    .menu-mobile {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        top: unset;
+        padding: 0 25px;
+        display: flex;
+        border-radius: 14% 14% 0 0;
+        align-items: center;
+        justify-content: space-between;
+        background: #1A1B28;
+        height: 75px;
+    
+        z-index: 99;
+    }
+
+    .menu-mobile .list-menu-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu-mobile .list-menu-mobile a {
+        font-size: 12px;
+        margin: 10px;
+        color: #fd3675;
+        text-decoration: none;
+    }
+
+    .menu-mobile .list-menu-mobile a ion-icon {
+        display: block;
+        margin: 20px auto 8px;
+    }
+
+    .style-icon {
+        width: 20px;
+        height: 20px;
+    }
+
     .qualification__data {
         margin-top: 40px;
         display: flex;
