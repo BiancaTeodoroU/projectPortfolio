@@ -31,9 +31,6 @@
         max-width: 262px;
         margin: 0 100px;
     }
-    .straight {
-        height: 40%;
-    }
 }
 
 @media (max-width: 480px) {
@@ -48,10 +45,6 @@
 
     .span-menu { 
         display: none;
-    }
-
-    .straight {
-        height: 50%;
     }
 
     .box .content p {

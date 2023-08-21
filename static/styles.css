@@ -291,10 +291,6 @@ p {
     background: #8a4a88;
 }
 
-.ajust-in-line {
-    height: 53%;
-}
-
 .u-m-20 {
     margin: 0 20px;
 }
@@ -946,4 +942,30 @@ footer {
 .ajust-in-sidebar {
     display: block;
     text-align: center;
+}
+
+.content-texts {
+    max-width: 500px;
+}
+
+.title-princ {
+    max-width: 480px;
+}
+
+.title-princ::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .3s infinite;
+}
+
+/* Animação aplicada ao content referente a classe *.titulo-principal* resultando num efeito de cursor piscando. */
+
+@keyframes pisca {
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
 }
